@@ -1,0 +1,187 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid .3rem $color-secondary-light-2;
+    border-radius: 1.2rem;
+    background-color: $color-grey-dark-1;
+    box-shadow: .1rem .5rem 2rem 0 $color-primary;
+    transition: all .3s ease;
+
+    &__img-container {
+        position: relative;
+        border-top-left-radius: .9rem;
+        border-top-right-radius: .9rem;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 25rem;
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    &__category {
+        background-color: rgba($color-secondary-dark-3, 0.3);
+        padding: 0.1rem 0.5rem;
+        border-radius: 0.6rem;
+        
+        &--blog {
+            align-self: flex-start;
+            background-color: rgba($color-tertiary-light-3, 0.1);
+            color: $color-tertiary-light-3;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        padding: 1.5rem 1.5rem;
+        flex: 1;
+
+        &-text {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+
+            &--title {
+                padding-bottom: 1.5rem;
+                text-transform: capitalize;
+                font-size: 1.7rem;
+                font-weight: 600;
+                color: $color-secondary-dark-3;
+
+                &-blog {
+                    color: $color-tertiary-light-2;
+                }
+            }
+
+            &--description {
+                text-align: left;
+                color: $color-white-light-1;
+
+                &-blog {
+                    color: $color-grey-light-1;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
+    }
+
+    &:hover {
+        box-shadow: 0.1rem 0.9rem 5rem 0 $color-primary;
+    }
+
+    &__img-container:hover &__img {
+        transform: translateY(-5%) scale(1.1);
+        filter: brightness(40%);
+    }
+
+    &__img-container:hover &__section-product--img-caption {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__section-product {
+        &--img {
+            &--centered {
+                object-position: center;
+            }
+
+            &-caption {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 3rem;
+                font-family: $font-tertiary;
+                font-style: oblique;
+                font-weight: 900;
+                text-align: center;
+                text-transform: capitalize;
+                letter-spacing: 0.5rem;
+                color: $color-secondary-light-1;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+            }
+        }
+
+        &--info {
+            &-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-transform: capitalize;
+            }
+
+            &-size {
+                display: flex;
+                gap: 0.7rem;
+            }
+        }
+
+        &--price {
+            color: $color-secondary-dark-3;
+            font-size: 2rem;
+        }
+
+        &--2-col-span-img-container {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0.9rem;
+        }
+
+        &--2-col-span {
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            grid-column: span 2;
+
+            &-img {
+                object-position: center;
+                width: 25rem;
+            }
+        }
+
+        &:hover {
+            animation: shake .2s ease-in-out;
+        }
+    }
+
+    &__section-blog {
+        border: solid .3rem $color-tertiary-dark-2;
+        box-shadow: .1rem .5rem 2rem 0 rgba($color-tertiary-light-2, .3);
+
+        &--time-container {
+            display: flex;
+            gap: .7rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &--time,
+        &--date {
+            font-size: 1.2rem;
+            color: $color-grey-light-3;
+        }
+
+        &:hover {
+            transform: translateY(-1rem) scale(1.03);
+            box-shadow: 0.1rem .5rem 3rem 0 rgba($color-tertiary-light-2, .4);
+        }
+
+        &:hover .card__img--blog {
+            transform: translateY(-5%) scale(1.1);
+            filter: brightness(70%);
+        }
+    }
+}

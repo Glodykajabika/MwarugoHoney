@@ -1,0 +1,31 @@
+
+
+@keyframes pulses {
+    // adding transform: translate(-50%, -50%) here instead of adding it in the button styles because adding it in the button styles conflicts with this part as CSS transforms are cumulative, and when you apply multiple transforms (like translate and scale), they override each other unless explicitly combined. Here's how to fix your button's centering while keeping the animation
+
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.07);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}

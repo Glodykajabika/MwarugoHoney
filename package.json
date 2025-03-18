@@ -1,0 +1,14 @@
+{
+  "name": "mwarugo-honey",
+  "version": "1.0.0",
+  "description": "Website for honey start up",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Glody",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

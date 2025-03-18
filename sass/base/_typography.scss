@@ -1,0 +1,49 @@
+
+body {
+    font-family: $font-quaternary;
+    line-height: 1.5;
+    font-size: $default-font-size;
+    color: $color-white-dark-1;
+}
+
+.heading-primary {
+    display: block;
+    margin: 0 auto;
+    font-family: $font-secondary;
+    text-transform: capitalize;
+    letter-spacing: .04rem;
+    font-weight: 600;
+    font-size: 5rem;
+    color: $color-white-dark-1;
+    text-align: center;
+    font-style: oblique;
+}
+
+.heading-secondary {
+    font-size: 5rem;
+    text-transform: capitalize;
+    letter-spacing: .04rem;
+    font-style: italic;
+    font-weight: 900;
+    color: $color-primary-light-1;
+    text-align: center;
+}
+
+.heading-tertiary {
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: .04rem;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.heading-quaternary {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    font-style: italic;
+    font-weight: 100;
+    // max-width: ;
+}

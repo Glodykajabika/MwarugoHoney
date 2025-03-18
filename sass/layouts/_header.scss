@@ -1,0 +1,104 @@
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(
+            circle,
+            rgba($color-grey-dark-1, 0.6) 20%,
+            rgba(black, 0.8) 60%
+        ),
+        url(../../img/honey-bg.jpg)
+    ;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100vh;
+    // background-blend-mode: normal;
+
+    &__navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__logo {
+        border-radius: 50%;
+        height: 10rem;
+        cursor: pointer;
+
+        &:hover {
+            background-image: radial-gradient(
+                circle,
+                rgba($color-primary-dark-1, 0.8) 10%,
+                rgba($color-primary, 0) 60%
+            );
+        }
+    }
+
+    &__links-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        display: inline-block;
+        position: relative;
+        font-family: $font-secondary;
+        color: $color-primary-light-3;
+        font-size: 1.6rem;
+        font-style: italic;
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: 0.06rem;
+        padding: 1rem 2.5rem;
+        z-index: 1;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+
+        &:active {
+            color: $color-primary-dark-2;
+            transform: translateY(-0.8rem);
+            transition: all 0.2s ease-in;
+        }
+    }
+
+    &__heading {
+        position: relative;
+        top: 20%;
+        left: 50%;
+        width: fit-content;
+        font-size: 10rem;
+        display: block;
+        font-family: $font-primary;
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: 0.04rem;
+        font-weight: 500;
+        color: $color-primary-light-3;
+        transform: translate(-50%, -50%);
+    }
+
+    &__text {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        display: inline-block;
+        width: 60vw;
+        transform: translateX(-50%);
+
+        &--main {
+            letter-spacing: 1rem;
+            color: $color-white-dark-1;
+            text-align: center;
+        }
+
+        &--sub-container {
+            width: 60vw;
+            height: 6rem;
+            color: $color-white-light-1;
+        }
+    }
+}
