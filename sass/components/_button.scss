@@ -88,4 +88,36 @@
             transform: scale(.7);
         }
     }
+
+    &__carousel {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: radial-gradient(
+            circle,
+            rgba($color-bg-dark, 0.9) 50%,
+            rgba($color-primary, 0.3) 65%,
+            rgba($color-bg-dark, 0.1) 70%
+        );
+
+        color: $color-star;
+        cursor: pointer;
+        font-size: 5rem;
+        border-radius: 50rem;
+        width: 10rem;
+        height: 10rem;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: $color-secondary-dark-1;
+        }
+    }
+
+    &__prev {
+        left: 1rem;
+    }
+
+    &__next {
+        right: 1rem;
+    }
 }
