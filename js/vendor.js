@@ -34,14 +34,14 @@ const navbar = document.querySelector('.nav');
 window.addEventListener('scroll', function () {
 
     const viewportHeight = window.innerHeight * .9;
-
-
+    
     if (window.scrollY >= viewportHeight) {
-        navbar.classList.add('sticky');
-
+        navbar.classList.add('nav--sticky');
+    
     } else {
-        navbar.classList.remove('sticky');
+        navbar.classList.remove('nav--sticky');
     }
+    
 });
 
 // Typing animation 

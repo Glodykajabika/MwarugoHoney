@@ -524,15 +524,16 @@ body {
   margin: 0 auto;
   justify-items: center; }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  transition: all 0.4s linear;
-  background-color: #0B0B0B;
-  box-shadow: 0 1rem 2rem rgba(218, 165, 32, 0.9); }
+.nav {
+  transition: all 0.3s linear; }
+  .nav--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0B0B0B;
+    box-shadow: 0 1rem 2rem rgba(218, 165, 32, 0.9); }
 
 .content {
   max-width: 130rem;
