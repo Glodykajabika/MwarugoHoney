@@ -4,20 +4,40 @@
     margin: 0 auto;
 }
 
-// JUST AN EXAMPLE
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-// .lora {
-//     font-family: "Lora", serif;
-//     font-optical-sizing: auto;
-//     font-weight: 400;
-//     font-style: normal;
-// }
+.about__img-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50rem;
+    height: 50rem;
 
-// .comforter-brush-regular {
-//     font-family: "Comforter Brush", cursive;
-//     font-weight: 400;
-//     font-style: normal;
-// }  
+}
 
+.about__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50rem;
+    height: 50rem;
+    object-fit: cover;
+    object-position: center;
+    clip-path: polygon(
+        50% 0%, 
+        100% 25%, 
+        100% 75%, 
+        50% 100%, 
+        0% 75%, 
+        0% 25%
+    );
+}
 
-// Will contain all the basic styles of the home page sections
+.about__text {
+    width: 60rem;
+    font-size: 1.8rem;
+}
