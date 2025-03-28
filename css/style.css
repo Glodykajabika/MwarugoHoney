@@ -172,6 +172,36 @@ body {
   left: 13.5%;
   background-color: #0B0B0B; }
 
+.accordion__item {
+  max-width: 70rem;
+  margin: 0 auto 5rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid #1E1E1E; }
+  .accordion__item--header {
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #FFD700;
+    text-transform: capitalize;
+    font-family: "Lora", serif;
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 2.2rem;
+    transition: all .3s ease-out; }
+    .accordion__item--header:hover {
+      color: #CC5500; }
+  .accordion__item--content {
+    display: none;
+    font-family: 1.8rem;
+    padding: 1rem; }
+    .accordion__item--content-text {
+      font-size: 1.8rem;
+      text-align: left; }
+    .accordion__item--content-active {
+      display: block; }
+
 .btn {
   display: block;
   padding: 1.3rem 2rem;
@@ -604,3 +634,8 @@ body {
 .about__text {
   width: 60rem;
   font-size: 1.8rem; }
+
+.section-faq-heading-quaternary {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90rem; }

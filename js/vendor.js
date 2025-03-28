@@ -34,14 +34,14 @@ const navbar = document.querySelector('.nav');
 window.addEventListener('scroll', function () {
 
     const viewportHeight = window.innerHeight * .9;
-    
+
     if (window.scrollY >= viewportHeight) {
         navbar.classList.add('nav--sticky');
-    
+
     } else {
         navbar.classList.remove('nav--sticky');
     }
-    
+
 });
 
 // Typing animation 
@@ -191,3 +191,24 @@ carouselWrapper.addEventListener('transitionend', () => {
 
 // Update on Window Resize
 window.addEventListener('resize', updateCarousel);
+
+
+// Accordion 
+const headers = document.querySelectorAll('.accordion__item--header');
+
+headers.forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const isOpen = content.classList.contains('accordion__item--content-active');
+
+        // Close all items
+        document.querySelectorAll('.accordion__item--content').forEach(item => {
+            item.classList.remove('accordion__item--content-active');
+        });
+
+        // Toggle the clicked item (open if it was closed, close if it was open)
+        if (!isOpen) {
+            content.classList.add('accordion__item--content-active');
+        }
+    });
+});
