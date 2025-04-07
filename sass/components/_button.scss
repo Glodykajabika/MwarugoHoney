@@ -120,4 +120,17 @@
     &__next {
         right: 1rem;
     }
+
+    &__form {
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        border: .3rem solid;
+        border-radius: .5rem;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: rgba($color-primary-dark-1, .7);
+            font-weight: 900;
+        }
+    }
 }
