@@ -16,15 +16,14 @@
     left: 0;
     width: 50rem;
     height: 50rem;
-
 }
 
 .about__img {
     position: relative;
     top: 0;
     left: 0;
-    width: 50rem;
-    height: 50rem;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     clip-path: polygon(

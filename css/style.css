@@ -132,45 +132,40 @@ body {
 .hexagonal-borders:hover::after {
   transition: all 0.2s ease-in; }
 
-.hexagonal-offsets--left::before, .hexagonal-offsets--left::after {
-  content: "";
-  position: absolute;
-  top: 9rem;
-  left: -6rem;
+.hexagonal-offsets {
   width: 100%;
-  height: 100%;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  z-index: -1; }
-
-.hexagonal-offsets--left::before {
-  background-color: #ffb900; }
-
-.hexagonal-offsets--left::after {
-  width: 97%;
-  height: 97%;
-  top: 19.55%;
-  left: -10.5%;
-  background-color: #0B0B0B; }
-
-.hexagonal-offsets--right::before, .hexagonal-offsets--right::after {
-  content: "";
-  position: absolute;
-  top: 9rem;
-  left: 6rem;
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  z-index: -1; }
-
-.hexagonal-offsets--right::before {
-  background-color: #ffb900; }
-
-.hexagonal-offsets--right::after {
-  width: 97%;
-  height: 97%;
-  top: 19.55%;
-  left: 13.5%;
-  background-color: #0B0B0B; }
+  height: 100%; }
+  .hexagonal-offsets::before, .hexagonal-offsets::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: -1; }
+  .hexagonal-offsets--left::before, .hexagonal-offsets--left::after {
+    content: "";
+    top: 9rem;
+    left: -6rem; }
+  .hexagonal-offsets--left::before {
+    background-color: #ffb900; }
+  .hexagonal-offsets--left::after {
+    width: 97%;
+    height: 97%;
+    top: 19.55%;
+    left: -10.5%;
+    background-color: #0B0B0B; }
+  .hexagonal-offsets--right::before, .hexagonal-offsets--right::after {
+    content: "";
+    top: 9rem;
+    left: 6rem; }
+  .hexagonal-offsets--right::before {
+    background-color: #ffb900; }
+  .hexagonal-offsets--right::after {
+    width: 97%;
+    height: 97%;
+    top: 19.55%;
+    left: 13.5%;
+    background-color: #0B0B0B; }
 
 .accordion__item {
   max-width: 70rem;
@@ -786,8 +781,8 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  width: 50rem;
-  height: 50rem;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
