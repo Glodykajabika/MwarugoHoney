@@ -59,14 +59,11 @@
         }
     }
 
-    &--item {
-
-        .email:hover {
-            transition: all .3s ease-in-out;
-            color: $color-secondary-dark-3;
-        }
+    .email:hover {
+        transition: all .3s ease-in-out;
+        color: $color-secondary-dark-3;
     }
-
+    
     &--social {
         padding-top: 1rem;
     }
