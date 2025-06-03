@@ -883,3 +883,14 @@ body {
   .section-footer .footer__credentials {
     text-align: center;
     color: #9f7020; }
+  .section-footer .designer {
+    text-transform: uppercase;
+    font-family: "Lora", serif;
+    font-style: italic;
+    padding-left: .5rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    color: yellow;
+    transition: all .3s ease-in-out; }
+    .section-footer .designer:hover {
+      color: #ffc24b; }

@@ -168,4 +168,19 @@
         text-align: center;
         color: $color-primary-dark-1;
     }
+
+    .designer {
+        text-transform: uppercase;
+        font-family: $font-secondary;
+        font-style: italic;
+        padding-left: .5rem;
+        font-weight: 900;
+        letter-spacing: .1rem;
+        color: $color-star;
+        transition: all .3s ease-in-out;
+        
+        &:hover {
+            color: $color-primary-light-3;
+        }
+    }
 }
