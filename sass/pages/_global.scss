@@ -1,0 +1,52 @@
+
+.logo {
+    border-radius: 50%;
+    height: 10rem;
+    cursor: pointer;
+
+    &:hover {
+        background-image: radial-gradient(
+            circle,
+            rgba($color-primary-dark-1, 0.8) 10%,
+            rgba($color-primary, 0) 60%
+        );
+    }
+}
+
+.content {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.unique {
+    display: flex;
+    padding: 2rem 5rem 0;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__heading {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        font-size: 4.5rem;
+        transition: all 0.3s ease-in-out;
+        letter-spacing: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            font-size: 4.7rem;
+            color: $color-primary-light-1;
+        } 
+    }
+
+    .cart__product {
+        width:  3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.section-intro {
+    margin: 10rem auto 15rem;
+    max-width: 90rem;
+}
