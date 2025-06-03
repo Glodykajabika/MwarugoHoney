@@ -16,24 +16,10 @@
     height: 100vh;
     // background-blend-mode: normal;
 
-    &__navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    &__logo {
-        border-radius: 50%;
-        height: 10rem;
-        cursor: pointer;
-
-        &:hover {
-            background-image: radial-gradient(
-                circle,
-                rgba($color-primary-dark-1, 0.8) 10%,
-                rgba($color-primary, 0) 60%
-            );
-        }
+    #header__navbar {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
     }
 
     &__links-box {
