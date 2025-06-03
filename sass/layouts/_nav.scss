@@ -1,17 +1,25 @@
 .nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
     transition: all 0.3s linear;
-
-
+    
+    
     &--sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
+        visibility: visible;
         background-color: $color-bg-dark;
         box-shadow: 0 1rem 2rem rgba($color: $color-primary-light-1, $alpha: 0.9);
+        opacity: 1;
 
         // Switch between the 2 to see wich one fits the best!!
+
         // background-color: $color-primary;
         // box-shadow: 0 2rem 2rem rgba($color: $color-bg-dark, $alpha: 0.9);
     }
