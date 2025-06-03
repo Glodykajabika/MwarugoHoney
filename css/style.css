@@ -101,6 +101,12 @@ body {
 .u-margin-top-big {
   margin-top: 8rem; }
 
+.u-margin-top-medium {
+  margin-top: 5rem; }
+
+.u-margin-top-small {
+  margin-top: 3rem; }
+
 .hexagonal-borders::before, .hexagonal-borders::after {
   content: "";
   position: absolute;
@@ -166,12 +172,6 @@ body {
     top: 19.55%;
     left: 13.5%;
     background-color: #0B0B0B; }
-
-.separator {
-  margin: 0 auto .5rem;
-  width: 90%;
-  background-color: #9f7020;
-  height: .1rem; }
 
 .accordion__item {
   max-width: 70rem;
@@ -686,6 +686,104 @@ body {
     transform: translate(-50%, -50%);
     transition: all .3s ease-in-out; }
 
+.section-footer {
+  background-image: linear-gradient(to right, rgba(11, 11, 11, 0.8), rgba(11, 11, 11, 0.8)), url(../../img/honey-comb-dak.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section-footer .footer__logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center; }
+    .section-footer .footer__logo-container:hover .footer__brand-name {
+      color: #DAA520; }
+  .section-footer .footer__brand-name {
+    color: #9f7020;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "Lora", serif;
+    letter-spacing: 0.3rem;
+    transition: all 0.3s ease-in-out; }
+  .section-footer__links {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 5rem 2rem; }
+  .section-footer .footer__heading {
+    margin-bottom: 1.5rem;
+    padding-left: 0.4rem;
+    font-weight: 900;
+    font-size: 1.7rem;
+    font-family: "Lora", serif;
+    letter-spacing: 0.11rem;
+    color: #DAA520; }
+  .section-footer .footer__link {
+    display: block;
+    transition: all 0.3s ease;
+    padding-right: 1rem;
+    border-left: 0.4rem solid transparent; }
+    .section-footer .footer__link:not(:last-child) {
+      margin-bottom: 1.5rem; }
+    .section-footer .footer__link:hover {
+      color: #DAA520;
+      padding-right: 0;
+      padding-left: 1rem;
+      border-left-color: #DAA520; }
+  .section-footer .footer__social--link-container {
+    display: flex;
+    flex-direction: column; }
+    .section-footer .footer__social--link-container .iconName-container {
+      display: flex;
+      align-items: center; }
+      .section-footer .footer__social--link-container .iconName-container .icon__name {
+        transition: all 0.3s ease; }
+      .section-footer .footer__social--link-container .iconName-container:hover .icon-container {
+        background-color: rgba(139, 69, 19, 0.3);
+        transform: translateY(-0.3rem); }
+      .section-footer .footer__social--link-container .iconName-container:hover .icon {
+        color: #fafa02; }
+      .section-footer .footer__social--link-container .iconName-container:hover .icon__name {
+        padding-left: 0.8rem;
+        color: #fafa02; }
+  .section-footer .footer__form {
+    display: flex;
+    gap: 2rem; }
+  .section-footer .footer__form {
+    margin: 2rem 0; }
+  .section-footer .footer__contact-container {
+    max-width: 50rem; }
+  .section-footer .email:hover {
+    transition: all 0.3s ease-in-out;
+    color: #FF8C00; }
+  .section-footer .footer__credentials {
+    text-align: center;
+    color: #9f7020;
+    border-top: 0.2rem solid #9f7020;
+    padding: 0.2rem 2.5rem;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center; }
+  .section-footer .designer {
+    text-transform: uppercase;
+    font-family: "Lora", serif;
+    font-style: italic;
+    padding-left: 0.5rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    color: yellow;
+    transition: all 0.3s ease-in-out; }
+    .section-footer .designer:hover {
+      color: #ffc24b; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  max-width: 114rem;
+  margin: 0 auto;
+  justify-items: center; }
+
 .header {
   position: relative;
   top: 0;
@@ -695,16 +793,10 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   height: 100vh; }
-  .header__navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; }
-  .header__logo {
-    border-radius: 50%;
-    height: 10rem;
-    cursor: pointer; }
-    .header__logo:hover {
-      background-image: radial-gradient(circle, rgba(159, 112, 32, 0.8) 10%, rgba(139, 69, 19, 0) 60%); }
+  .header #header__navbar {
+    position: relative;
+    opacity: 1;
+    visibility: visible; }
   .header__links-box {
     display: flex;
     justify-content: space-between; }
@@ -756,28 +848,59 @@ body {
       height: 6rem;
       color: #fff; }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-  max-width: 114rem;
-  margin: 0 auto;
-  justify-items: center; }
-
 .nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
   transition: all 0.3s linear; }
   .nav--sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+    visibility: visible;
     background-color: #0B0B0B;
-    box-shadow: 0 1rem 2rem rgba(218, 165, 32, 0.9); }
+    box-shadow: 0 1rem 2rem rgba(218, 165, 32, 0.9);
+    opacity: 1; }
+
+.logo {
+  border-radius: 50%;
+  height: 10rem;
+  cursor: pointer; }
+  .logo:hover {
+    background-image: radial-gradient(circle, rgba(159, 112, 32, 0.8) 10%, rgba(139, 69, 19, 0) 60%); }
 
 .content {
   max-width: 130rem;
   margin: 0 auto; }
+
+.unique {
+  display: flex;
+  padding: 2rem 5rem 0;
+  align-items: center;
+  justify-content: space-between; }
+  .unique .header__heading {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    font-size: 4.5rem;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1rem; }
+    .unique .header__heading:hover {
+      cursor: pointer;
+      font-size: 4.7rem;
+      color: #DAA520; }
+  .unique .cart__product {
+    width: 3.5rem;
+    height: 3.5rem; }
+
+.section-intro {
+  margin: 10rem auto 15rem;
+  max-width: 90rem; }
 
 .about-container {
   display: flex;
@@ -809,88 +932,3 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 90rem; }
-
-.section-footer {
-  background-image: linear-gradient(to right, rgba(11, 11, 11, 0.8), rgba(11, 11, 11, 0.8)), url(../../img/honey-comb-dak.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .section-footer .footer__logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center; }
-    .section-footer .footer__logo-container:hover .footer__brand-name {
-      color: #DAA520; }
-  .section-footer .footer__brand-name {
-    color: #9f7020;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-family: "Lora", serif;
-    letter-spacing: .3rem;
-    transition: all .3s ease-in-out; }
-  .section-footer__links {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 5rem 2rem; }
-  .section-footer .footer__heading {
-    margin-bottom: 1.5rem;
-    padding-left: .4rem;
-    font-weight: 900;
-    font-size: 1.7rem;
-    font-family: "Lora", serif;
-    letter-spacing: .11rem;
-    color: #DAA520; }
-  .section-footer .footer__link {
-    display: block;
-    transition: all .3s ease;
-    padding-right: 1rem;
-    border-left: .4rem solid transparent; }
-    .section-footer .footer__link:not(:last-child) {
-      margin-bottom: 1.5rem; }
-    .section-footer .footer__link:hover {
-      color: #DAA520;
-      padding-right: 0;
-      padding-left: 1rem;
-      border-left-color: #DAA520; }
-  .section-footer .footer__social--link-container {
-    display: flex;
-    flex-direction: column; }
-    .section-footer .footer__social--link-container .iconName-container {
-      display: flex;
-      align-items: center; }
-      .section-footer .footer__social--link-container .iconName-container .icon__name {
-        transition: all .3s ease; }
-      .section-footer .footer__social--link-container .iconName-container:hover .icon-container {
-        background-color: rgba(139, 69, 19, 0.3);
-        transform: translateY(-0.3rem); }
-      .section-footer .footer__social--link-container .iconName-container:hover .icon {
-        color: #fafa02; }
-      .section-footer .footer__social--link-container .iconName-container:hover .icon__name {
-        padding-left: .8rem;
-        color: #fafa02; }
-  .section-footer .footer__form {
-    display: flex;
-    gap: 2rem; }
-  .section-footer .footer__form {
-    margin: 2rem 0; }
-  .section-footer .footer__contact-container {
-    max-width: 50rem; }
-  .section-footer .email:hover {
-    transition: all .3s ease-in-out;
-    color: #FF8C00; }
-  .section-footer .footer__credentials {
-    text-align: center;
-    color: #9f7020; }
-  .section-footer .designer {
-    text-transform: uppercase;
-    font-family: "Lora", serif;
-    font-style: italic;
-    padding-left: .5rem;
-    font-weight: 900;
-    letter-spacing: .1rem;
-    color: yellow;
-    transition: all .3s ease-in-out; }
-    .section-footer .designer:hover {
-      color: #ffc24b; }
