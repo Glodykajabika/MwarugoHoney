@@ -25,6 +25,7 @@
     }
 
     &__category {
+        text-transform: capitalize;
         background-color: rgba($color-secondary-dark-3, 0.3);
         padding: 0.1rem 0.5rem;
         border-radius: 0.6rem;

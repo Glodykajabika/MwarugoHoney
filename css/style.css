@@ -335,6 +335,7 @@ body {
     transition: all 0.3s ease;
     cursor: pointer; }
   .card__category {
+    text-transform: capitalize;
     background-color: rgba(255, 140, 0, 0.3);
     padding: 0.1rem 0.5rem;
     border-radius: 0.6rem; }
@@ -877,12 +878,12 @@ body {
   max-width: 130rem;
   margin: 0 auto; }
 
-.unique {
+.mini-header {
   display: flex;
   padding: 2rem 5rem 0;
   align-items: center;
   justify-content: space-between; }
-  .unique .header__heading {
+  .mini-header .header__heading {
     position: relative;
     top: 0;
     left: 0;
@@ -890,11 +891,11 @@ body {
     font-size: 4.5rem;
     transition: all 0.3s ease-in-out;
     letter-spacing: 1rem; }
-    .unique .header__heading:hover {
+    .mini-header .header__heading:hover {
       cursor: pointer;
       font-size: 4.7rem;
       color: #DAA520; }
-  .unique .cart__product {
+  .mini-header .cart__product {
     width: 3.5rem;
     height: 3.5rem; }
 
