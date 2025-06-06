@@ -70,84 +70,90 @@
                 <h4 class="section-intro heading-quaternary">
                     <i class="icon quote quote--left"></i>
 
-                    Chez Mwarugo Honey, nous croyons que chaque conversation est une chance de tisser des liens avec notre communauté. Que vous ayez une question, une commande ou une idée à partager, notre équipe de Goma est là pour vous. Contactez-nous et faisons partie de votre histoire sucrée !
+                    Chez Mwarugo Honey, nous croyons que chaque conversation est une chance de tisser des liens avec
+                    notre communauté. Que vous ayez une question, une commande ou une idée à partager, notre équipe de
+                    Goma est là pour vous. Contactez-nous et faisons partie de votre histoire sucrée !
 
                     <i class="icon quote quote--right"></i>
                 </h4>
 
                 <div class="contact__card">
-                <div class="contact__info">
-                    <h4 class="contact__info--heading heading-quartenary">
-                        Chez Mwarugo Honey, votre satisfaction est notre priorité. Une question ou une commande ? Contactez-nous pour toute demande !
-                    </h4>
+                    <div class="contact__info">
+                        <h4 class="contact__info--heading heading-quartenary">
+                            Chez Mwarugo Honey, votre satisfaction est notre priorité. Une question ou une commande ?
+                            Contactez-nous pour toute demande !
+                        </h4>
 
-                    <div class="contact__info--footer">
-                        <p class="contact__info--footer-title">
-                            Joignez nous via: 
-                        </p>
+                        <div class="contact__info--footer">
+                            <p class="contact__info--footer-title">
+                                Joignez nous via:
+                            </p>
 
-                        <ul class="contact__info--item">
-                            <li>
-                                Email : 
+                            <ul class="contact__info--item">
+                                <li>
+                                    Email :
 
-                                <a href="mailto:info@example.com" class="email">
-                                    info@example.com
+                                    <a href="mailto:info@example.com" class="email">
+                                        info@example.com
+                                    </a>
+                                </li>
+
+                                <li>
+                                    Téléphone : +243 123 456 789
+                                </li>
+
+                                <li>
+                                    Adresse: 123 Rue du Miel, Goma, RDC
+                                </li>
+                            </ul>
+
+                            <div class="contact__info--social">
+                                <a href="#" class="icon-container">
+                                    <i class="icon contact__info--icon instagram"></i>
                                 </a>
-                            </li>
 
-                            <li>
-                                Téléphone : +243 123 456 789
-                            </li>
+                                <a href="#" class="icon-container">
+                                    <i class="icon contact__info--icon facebook"></i>
+                                </a>
 
-                            <li>
-                                Adresse: 123 Rue du Miel, Goma, RDC
-                            </li>
-                        </ul>
+                                <a href="#" class="icon-container">
+                                    <i class="icon contact__info--icon whatsapp"></i>
+                                </a>
 
-                        <div class="contact__info--social">
-                            <a href="#" class="icon-container">
-                                <i class="icon contact__info--icon instagram"></i>
-                            </a>
-
-                            <a href="#" class="icon-container">
-                                <i class="icon contact__info--icon facebook"></i>
-                            </a>
-
-                            <a href="#" class="icon-container">
-                                <i class="icon contact__info--icon whatsapp"></i>
-                            </a>
-
-                            <a href="#" class="icon-container">
-                                <i class="icon contact__info--icon twitter"></i>
-                            </a>
+                                <a href="#" class="icon-container">
+                                    <i class="icon contact__info--icon twitter"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <form action="/submit-form" method="post" class="contact__form">
+                        <div class="form__group">
+                            <input type="text" id="name" name="name" class="form__group--input"
+                                placeholder="Nom complet" required>
+
+                            <label for="name" class="form__group--label">
+                                Nom complet
+                            </label>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="email" id="email" name="email" class="form__group--input" placeholder="Email"
+                                required>
+
+                            <label for="email" class="form__group--label">
+                                Email
+                            </label>
+                        </div>
+
+                        <textarea id="message" name="message" class="form__text-area" placeholder="Message"
+                            required></textarea>
+
+                        <button class="btn btn__form" type="submit">
+                            Envoyer
+                        </button>
+                    </form>
                 </div>
-
-                <form action="/submit-form" method="post" class="contact__form">
-                    <div class="form__group">
-                        <input type="text" id="name" name="name" class="form__group--input" placeholder="Nom complet" required>
-    
-                        <label for="name" class="form__group--label">
-                            Nom complet
-                        </label>
-                    </div>
-                    
-                    <div class="form__group">
-                        <input type="email" id="email" name="email" class="form__group--input" placeholder="Email" required>
-    
-                        <label for="email" class="form__group--label">
-                            Email
-                        </label>
-                    </div>
-
-                    <textarea id="message" name="message" class="form__text-area" placeholder="Message" required></textarea>
-
-                    <button class="btn btn__form" type="submit">
-                        Envoyer
-                    </button>
-                </form>
-            </div>
             </div>
         </section>
 
@@ -247,20 +253,32 @@
                     </h5>
 
                     <ul class="footer__links-box">
-                        <a href="" class="footer__link ">
-                            Politique de Confidentialité
+                        <a href="/index.html" class="footer__link ">
+                            Accueil
                         </a>
 
                         <a href="/products.html" class="footer__link ">
-                            Conditions d’Utilisation
+                            Nos produits
                         </a>
 
-                        <a href="/" class="footer__link ">
-                            Conditions de vente
+                        <a href="/blog.html" class="footer__link ">
+                            Blog
                         </a>
 
-                        <a href="/" class="footer__link ">
-                            Politique de remboursement
+                        <a href="/about.html" class="footer__link ">
+                            À propos
+                        </a>
+
+                        <a href="/contact.html" class="footer__link ">
+                            Contact
+                        </a>
+
+                        <a href="/reviews.html" class="footer__link ">
+                            Témoignages
+                        </a>
+
+                        <a href="/faq.html" class="footer__link ">
+                            Questions fréquentes
                         </a>
                     </ul>
                 </div>

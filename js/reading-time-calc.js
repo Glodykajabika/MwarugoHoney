@@ -9,7 +9,7 @@ function readingTimeCalc(text) {
 
 // Function to calculate and display reading time for all articles
 function displayReadingTimes() {
-    const articles = document.querySelectorAll('.card__section-blog'); // Get all article links
+    const articles = document.querySelectorAll('.article'); // Get all article links
     articles.forEach(article => {
         const contentElement = article.querySelector('.blog-content'); // Get hidden content
         const content = contentElement.textContent; // Extract text

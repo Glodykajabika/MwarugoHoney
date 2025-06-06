@@ -151,6 +151,15 @@
     
 }
 
+.dot {
+    display: inline-block;
+    width: .6rem;
+    height: .6rem;
+    background-color: $color-grey-light-3;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
 // .separator {
 //     margin: 0 auto .5rem;
 //     width: 100%;
