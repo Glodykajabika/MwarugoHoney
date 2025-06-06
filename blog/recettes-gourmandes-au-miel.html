@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iansui&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/img/bee.png" />
+
+    <title>MH | BLOG</title>
+</head>
+
+<body>
+    <nav class="nav header__navbar">
+        <a href="/index.html">
+            <img src="/img/bee-logo.png" alt="Logo" class="logo">
+        </a>
+
+        <ul class="header__links-box">
+            <a href="/index.html" class="header__link header__link--1 hexagonal-borders">
+                Accueil
+            </a>
+
+            <a href="/products.html" class="header__link header__link--2 hexagonal-borders">
+                Nos produits
+            </a>
+
+            <a href="/blog.html" class="header__link header__link--3 hexagonal-borders">
+                Blog
+            </a>
+
+            <a href="/about.html" class="header__link header__link--4 hexagonal-borders">
+                À propos
+            </a>
+
+            <a href="/contact.html" class="header__link header__link--5 hexagonal-borders">
+                Contact
+            </a>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div class="mini-header">
+            <a href="/index.html">
+                <img src="/img/bee-logo.png" alt="Logo" class="logo">
+            </a>
+
+            <h1 class="header__heading">
+                Blog
+            </h1>
+
+            <!-- icon of cart -->
+            <a href="#" class="icon cart cart__product"></a>
+        </div>
+
+        <section class="section-article">
+            <div class="blog__article article">
+                <h1 class="article__heading">
+                    Recettes Gourmandes au Miel : Douceur Naturelle
+                </h1>
+
+                <h2 class="article__description">
+                    Découvrez des recettes sucrées et salées mettant en valeur le miel comme ingrédient star.
+                </h2>
+
+                <div class="article__info-container">
+                    <!-- ! I will be using the card classes here since the styles and link to js they possess will be quite the same for the article page as well -->
+
+                    <p class="card__category card__category--blog">
+                        Recettes
+                    </p>
+
+                    <div class="article__date-time-container">
+                        <div class="card__section-blog--time-container">
+                            <p class="card__section-blog--time">
+                                <!-- Time it take to read the article, realtime update from js -->
+                            </p>
+
+                            <!-- <i class="icon open-book"></i> -->
+                        </div>
+
+                        <span class="dot" aria-hidden: true;></span>
+
+                        <p class="card__section-blog--date">
+                            1 Févr. 2025
+                        </p>
+                    </div>
+                </div>
+
+                <div class="article__img-container">
+                    <img src="/img/honey-recipes.jpg" alt="" class="img article__img">
+                </div>
+
+                <div class="blog-content">
+                    <p class="blog__text">
+                        Le miel brut, avec ses arômes floraux et sa douceur naturelle, est bien plus
+                        qu’un
+                        simple édulcorant : c’est une invitation à la créativité en cuisine. À Goma, où
+                        les
+                        apiculteurs de Mwarugo Honey récoltent un miel pur des collines verdoyantes, ce
+                        trésor local sublime aussi bien les plats sucrés que salés. Que vous soyez
+                        amateur
+                        de desserts réconfortants ou de saveurs audacieuses, le miel apporte une touche
+                        d’élégance et d’authenticité à vos recettes. Découvrez quatre recettes
+                        gourmandes –
+                        deux sucrées, deux salées – qui mettent en valeur le miel comme ingrédient star,
+                        parfaites pour impressionner votre famille ou vos invités.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        1. Pain d’Épices au Miel de Goma (Sucré)
+                    </h2>
+
+                    <p class="blog__text">
+                        Le pain d’épices, moelleux et parfumé, est un classique qui célèbre la richesse
+                        du
+                        miel brut. Cette recette, inspirée des traditions locales, utilise le miel de
+                        fleurs
+                        sauvages de Goma pour une saveur profonde et chaleureuse.
+                    </p>
+
+                    <h3 class="blog__points--sub">
+                        Ingrédients (pour 8 personnes) :
+                    </h3>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            250g de farine de blé (ou un mélange blé-seigle)
+                        </li>
+
+                        <li>
+                            150 g de miel brut Mwarugo Honey
+                        </li>
+
+                        <li>
+                            100 ml de lait tiède
+                        </li>
+
+                        <li>
+                            50 g de sucre brun
+                        </li>
+
+                        <li>
+                            1 œuf
+                        </li>
+
+                        <li>
+                            1 cuillère à café de bicarbonate de soude
+                        </li>
+
+                        <li>
+                            1 cuillère à café d’épices (cannelle, gingembre, muscade)
+                        </li>
+
+                        <li>
+                            1 pincée de sel
+                        </li>
+                    </ul>
+
+                    <h3 class="blog__points--sub">
+                        Préparation :
+                    </h3>
+
+                    <ol class="blog__instructions">
+                        <li>
+                            Préchauffez le four à 160°C et graissez un moule à cake.
+                        </li>
+
+                        <li>
+                            Dans un bol, mélangez la farine, le bicarbonate, les épices et le sel.
+                        </li>
+
+                        <li>
+                            Dans une casserole, faites chauffer doucement le miel avec le lait et le
+                            sucre jusqu’à dissolution. Laissez tiédir.
+                        </li>
+
+                        <li>
+                            Incorporez l’œuf battu au mélange liquide, puis versez progressivement dans
+                            les ingrédients secs, en remuant pour obtenir une pâte lisse.
+                        </li>
+
+                        <li>
+                            Versez dans le moule et faites cuire 40–50 minutes, jusqu’à ce qu’un
+                            cure-dent ressorte propre.
+                        </li>
+
+                        <li>
+                            Laissez refroidir avant de démouler. Servez avec une tisane ou une boule de
+                            yaourt nature pour un goûter réconfortant.
+                        </li>
+                    </ol>
+
+                    <p class="blog__text">
+                        <b>Astuce</b> : Le miel brut donne une texture moelleuse et un goût riche.
+                        Ajoutez des zestes d’orange pour une note festive, parfaite pour les
+                        célébrations à Goma.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        2. Poulet Grillé au Miel et Citron (Salé)
+                    </h2>
+
+                    <p class="blog__text">
+                        Cette recette savoureuse associe le miel brut à des saveurs citronnées et
+                        épicées, créant un plat juteux et parfumé qui ravira vos convives. Idéal pour un
+                        repas familial ou un barbecue en plein air.
+                    </p>
+
+                    <h3 class="blog__points--sub">
+                        Ingrédients (pour 4 personnes) :
+                    </h3>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            4 cuisses de poulet (ou 8 pilons)
+                        </li>
+
+                        <li>
+                            3 cuillères à soupe de miel brut Mwarugo Honey
+                        </li>
+
+                        <li>
+                            Jus de 2 citrons
+                        </li>
+
+                        <li>
+                            2 gousses d’ail hachées
+                        </li>
+
+                        <li>
+                            1 cuillère à soupe d’huile d’olive
+                        </li>
+
+                        <li>
+                            1 cuillère à café de paprika
+                        </li>
+
+                        <li>
+                            1 cuillère à café de thym séché
+                        </li>
+
+                        <li>
+                            Sel et poivre au goût
+                        </li>
+                    </ul>
+
+                    <h3 class="blog__points--sub">
+                        Préparation :
+                    </h3>
+
+                    <ol class="blog__instructions">
+                        <li>
+                            Dans un bol, mélangez le miel, le jus de citron, l’ail, l’huile, le paprika, le thym, le sel
+                            et le poivre pour créer une marinade.
+                        </li>
+
+                        <li>
+                            Placez le poulet dans un plat et badigeonnez-le généreusement de marinade.
+                            Couvrez et laissez reposer au réfrigérateur pendant au moins 2 heures
+                            (idéalement toute une nuit).
+                        </li>
+
+                        <li>
+                            Préchauffez le four à 200°C ou préparez un barbecue.
+                        </li>
+
+                        <li>
+                            Faites griller le poulet 35–40 minutes au four (ou 20–25 minutes au
+                            barbecue), en le retournant à mi-cuisson et en l’arrosant de marinade
+                            restante.
+                        </li>
+
+                        <li>
+                            Servez avec du manioc frit ou une salade de légumes frais, typique des repas
+                            à Goma.
+                        </li>
+                    </ol>
+
+                    <p class="blog__text">
+                        <b>Astuce</b> : Le miel caramélise à la cuisson, donnant une peau croustillante.
+                        Pour une touche locale, ajoutez une pincée de piment dans la marinade.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        3. Tartelettes au Miel et Noix (Sucré)
+                    </h2>
+
+                    <p class="blog__text">
+                        Ces tartelettes combinent la douceur du miel brut avec le croquant des noix, offrant un dessert
+                        raffiné et facile à préparer. Parfaites pour les occasions spéciales ou une pause gourmande.
+                    </p>
+
+                    <h3 class="blog__points--sub">
+                        Ingrédients (pour 6 tartelettes) :
+                    </h3>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            1 pâte brisée (ou feuilletée)
+                        </li>
+
+                        <li>
+                            100 g de miel brut Mwarugo Honey
+                        </li>
+
+                        <li>
+                            100 g de noix (amandes, noix de cajou ou arachides locales)
+                        </li>
+
+                        <li>
+                            50 g de beurre fondu
+                        </li>
+
+                        <li>
+                            2 œufs
+                        </li>
+
+                        <li>
+                            50 ml de crème fraîche
+                        </li>
+
+                        <li>
+                            1 cuillère à café de vanille
+                        </li>
+                    </ul>
+
+                    <h3 class="blog__points--sub">
+                        Préparation :
+                    </h3>
+
+                    <ol class="blog__instructions">
+                        <li>
+                            Préchauffez le four à 180°C. Découpez la pâte brisée en cercles et placez-les dans des
+                            moules à tartelettes.
+                        </li>
+
+                        <li>
+                            Dans un bol, mélangez le miel, le beurre fondu, les œufs, la crème et la vanille jusqu’à
+                            obtenir une consistance homogène.
+                        </li>
+
+                        <li>
+                            Hachez grossièrement les noix et répartissez-les dans les fonds de tarte. Versez le mélange
+                            au miel par-dessus.
+                        </li>
+
+                        <li>
+                            Faites cuire 20–25 minutes, jusqu’à ce que les tartelettes soient dorées.
+                        </li>
+
+                        <li>
+                            Laissez refroidir légèrement avant de servir, accompagnées d’une boule de glace vanille ou
+                            d’un thé local.
+                        </li>
+                    </ol>
+
+                    <p class="blog__text">
+                        <b>Astuce</b> : Utilisez des noix locales disponibles à Goma pour une touche authentique. Le
+                        miel brut ajoute une profondeur sucrée qui équilibre le croquant des noix.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        4. Vinaigrette au Miel et Moutarde (Salé)
+                    </h2>
+
+                    <p class="blog__text">
+                        Cette vinaigrette polyvalente transforme n’importe quelle salade en un plat savoureux, grâce à
+                        la moutarde et au miel brut. Elle est rapide à préparer et idéale pour accompagner les légumes
+                        frais de Goma.
+                    </p>
+
+                    <h3 class="blog__points--sub">
+                        Ingrédients (pour 4 personnes) :
+                    </h3>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            2 cuillères à soupe de miel brut Mwarugo Honey
+                        </li>
+
+                        <li>
+                            1 cuillère à soupe de moutarde de Dijon
+                        </li>
+
+                        <li>
+                            3 cuillères à soupe d’huile de tournesol
+                        </li>
+
+                        <li>
+                            1 cuillère à soupe de vinaigre de cidre
+                        </li>
+
+                        <li>
+                            1 petite gousse d’ail hachée (facultatif)
+                        </li>
+
+                        <li>
+                            Sel et poivre au goût
+                        </li>
+                    </ul>
+
+                    <h3 class="blog__points--sub">
+                        Préparation :
+                    </h3>
+
+                    <ol class="blog__instructions">
+                        <li>
+                            Dans un petit bol, mélangez la moutarde, le miel et le vinaigre jusqu’à obtenir une base
+                            lisse.
+                        </li>
+
+                        <li>
+                            Incorporez lentement l’huile tout en fouettant pour émulsionner la vinaigrette.
+                        </li>
+
+                        <li>
+                            Ajoutez l’ail (si utilisé), le sel et le poivre, et mélangez bien.
+                        </li>
+
+                        <li>
+                            Versez sur une salade de chou, carottes et avocats, ou utilisez comme marinade pour des
+                            légumes grillés.
+                        </li>
+
+                        <li>
+                            Conservez au réfrigérateur dans un pot hermétique jusqu’à une semaine. Secouez avant de
+                            servir.
+                        </li>
+                    </ol>
+
+                    <p class="blog__text">
+                        <b>Astuce</b> : Le miel équilibre l’acidité de la moutarde, créant une vinaigrette douce et
+                        piquante. Essayez-la avec des légumes de saison ou comme sauce pour des brochettes de poisson.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        Pourquoi le miel brut ?
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel brut, comme celui produit par Mwarugo Honey, est l’ingrédient parfait pour ces recettes
+                        grâce à sa richesse en saveurs. Contrairement au miel transformé, il conserve ses enzymes et ses
+                        arômes floraux, offrant une profondeur unique à vos plats. À Goma, où chaque pot capture
+                        l’essence des fleurs sauvages, le miel brut est un hommage à la nature et à l’artisanat local.
+                        De plus, il est une alternative saine au sucre raffiné et ajoute des antioxydants à vos repas.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        Conseils pour cuisiner avec du miel
+                    </h2>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Choisissez du miel brut</b> : Préférez un miel non pasteurisé pour préserver ses
+                            bienfaits et son goût.
+                        </li>
+
+                        <li>
+                            <b>Évitez la surchauffe</b> : Ajoutez le miel en fin de cuisson pour les plats
+                            chauds afin
+                            de ne pas détruire ses enzymes.
+                        </li>
+
+                        <li>
+                            <b>Adaptez la quantité</b> : Le miel est plus sucré que le sucre ; utilisez environ
+                            ¾ de la
+                            quantité recommandée pour les recettes sucrées.
+                        </li>
+
+                        <li>
+                            <b>Associez avec audace</b> : Le miel se marie bien avec des saveurs acides
+                            (citron,
+                            vinaigre), épicées (gingembre, piment) ou salées (fromage, viande).
+                        </li>
+                    </ul>
+
+                    <h2 class="blog__points--main">
+                        Une touche de Goma dans chaque recette
+                    </h2>
+
+                    <p class="blog__text">
+                        Ces recettes gourmandes au miel célèbrent la polyvalence de cet ingrédient et la richesse du
+                        terroir de Goma. Que vous prépariez un dessert réconfortant comme le pain d’épices ou une
+                        vinaigrette fraîche pour une salade, le miel brut Mwarugo Honey apporte une douceur naturelle
+                        qui fait toute la différence. À table, partagez ces plats avec vos proches et racontez
+                        l’histoire des apiculteurs qui transforment les fleurs en or liquide. Invitez la nature dans
+                        votre cuisine et laissez le miel sublimer chaque bouchée.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        Conclusion
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel brut est une star en cuisine, capable de transformer des recettes sucrées et salées en
+                        expériences gustatives mémorables. À Goma, Mwarugo Honey incarne cette magie, reliant la terre à
+                        votre table avec chaque pot. Essayez ces recettes, laissez-vous inspirer par la douceur du miel,
+                        et partagez vos créations avec notre communauté. Prêt à cuisiner ? Que la douceur naturelle
+                        guide vos plats !
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="section-footer u-margin-top-huge">
+            <div class="section-footer__links">
+                <a href="/index.html" class="footer__logo-container">
+                    <img src="../img/bee-logo.png" alt="Logo" class="logo">
+
+                    <p class="footer__brand-name">
+                        Mwarugo honey
+                    </p>
+                </a>
+
+                <div class="footer__navigation-link">
+                    <h5 class="footer__heading">
+                        Explorez
+                    </h5>
+
+                    <ul class="footer__links-box">
+                        <a href="/index.html" class="footer__link ">
+                            Accueil
+                        </a>
+
+                        <a href="/products.html" class="footer__link ">
+                            Nos produits
+                        </a>
+
+                        <a href="/blog.html" class="footer__link ">
+                            Blog
+                        </a>
+
+                        <a href="/about.html" class="footer__link ">
+                            À propos
+                        </a>
+
+                        <a href="/contact.html" class="footer__link ">
+                            Contact
+                        </a>
+
+                        <a href="/reviews.html" class="footer__link ">
+                            Témoignages
+                        </a>
+
+                        <a href="/faq.html" class="footer__link ">
+                            Questions fréquentes
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h5 class="footer__heading">
+                        Réseaux sociaux
+                    </h5>
+
+                    <div class="footer__social--link-container">
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon instagram"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Instagram
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon facebook"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Facebook
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon whatsapp"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Whatsapp
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon twitter"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Twitter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__legal">
+                    <h5 class="footer__heading">
+                        Rejoignez Notre Ruche
+                    </h5>
+
+                    <ul class="footer__links-box">
+                        <a href="/" class="footer__link ">
+                            Politique de Confidentialité
+                        </a>
+
+                        <a href="/" class="footer__link ">
+                            Conditions d’Utilisation
+                        </a>
+
+                        <a href="/" class="footer__link ">
+                            Conditions de vente
+                        </a>
+
+                        <a href="/" class="footer__link ">
+                            Politique de remboursement
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__contact-container">
+                    <h5 class="footer__heading">
+                        Rejoignez Notre Ruche
+                    </h5>
+
+                    <p class="footer__contact--text">
+                        Inscrivez-vous pour recevoir des nouvelles de
+
+                        <span>
+                            Mwarugo Honey
+                        </span>
+
+                        , des recettes savoureuses et des offres exclusives directement dans votre boîte de réception !
+                    </p>
+
+                    <form action="/submit-form" method="post" class="footer__form">
+                        <input type="email" id="email" name="email" class="form__group--input" placeholder="Email"
+                            required>
+
+                        <button class="btn btn__form btn__form--footer" type="submit">
+                            Envoyer
+                        </button>
+                    </form>
+
+                    <div class="footer__contact">
+                        <h5 class="footer__heading">
+                            Nos contacts
+                        </h5>
+
+                        <ul class="footer__contact--info">
+                            <li>
+                                Email :
+
+                                <a href="mailto:info@example.com" class="email">
+                                    info@example.com
+                                </a>
+                            </li>
+
+                            <li>
+                                Téléphone : +243 123 456 789
+                            </li>
+
+                            <li>
+                                Adresse: 123 Rue du Miel, Goma, RDC
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="separator"></div> -->
+
+            <p class="footer__credentials">
+                &copy; 2025 Mwarugo Honey. Tous droits réservés. | By
+
+                <a href="" class="designer">
+                    Glody
+                </a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="/js/vendor.js" defer></script>
+    <script src="/js/reading-time-calc.js" defer></script>
+</body>
+
+</html>
