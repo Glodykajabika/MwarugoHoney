@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iansui&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/img/bee.png" />
+
+    <title>MH | BLOG</title>
+</head>
+
+<body>
+    <nav class="nav header__navbar">
+        <a href="/index.html">
+            <img src="/img/bee-logo.png" alt="Logo" class="logo">
+        </a>
+
+        <ul class="header__links-box">
+            <a href="/index.html" class="header__link header__link--1 hexagonal-borders">
+                Accueil
+            </a>
+
+            <a href="/products.html" class="header__link header__link--2 hexagonal-borders">
+                Nos produits
+            </a>
+
+            <a href="/blog.html" class="header__link header__link--3 hexagonal-borders">
+                Blog
+            </a>
+
+            <a href="/about.html" class="header__link header__link--4 hexagonal-borders">
+                À propos
+            </a>
+
+            <a href="/contact.html" class="header__link header__link--5 hexagonal-borders">
+                Contact
+            </a>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div class="mini-header">
+            <a href="/index.html">
+                <img src="/img/bee-logo.png" alt="Logo" class="logo">
+            </a>
+
+            <h1 class="header__heading">
+                Blog
+            </h1>
+
+            <!-- icon of cart -->
+            <a href="#" class="icon cart cart__product"></a>
+        </div>
+
+        <section class="section-article">
+            <div class="blog__article article">
+                <h1 class="article__heading">
+                    Les Différents Types de Miel et Leurs Utilisations
+                </h1>
+
+                <h2 class="article__description">
+                    Découvrez les variétés de miel (acacia, lavande, etc.) et leurs utilisations culinaires et
+                    médicinales.
+                </h2>
+
+                <div class="article__info-container">
+                    <!-- ! I will be using the card classes here since the styles and link to js they possess will be quite the same for the article page as well -->
+
+                    <p class="card__category card__category--blog">
+                        Variétés de Miel
+                    </p>
+
+                    <div class="article__date-time-container">
+                        <div class="card__section-blog--time-container">
+                            <p class="card__section-blog--time">
+                                <!-- Time it take to read the article, realtime update from js -->
+                            </p>
+
+                            <!-- <i class="icon open-book"></i> -->
+                        </div>
+
+                        <span class="dot" aria-hidden: true;></span>
+
+                        <p class="card__section-blog--date">
+                            29 Févr. 2025
+                        </p>
+                    </div>
+                </div>
+
+                <div class="article__img-container">
+                    <img src="/img/honey-types.jpg" alt="" class="img article__img">
+                </div>
+
+                <div class="blog-content">
+                    <p class="blog__text">
+                        Le miel, ce nectar doré façonné par les abeilles, est un trésor de la nature dont la diversité
+                        reflète les paysages et les fleurs d’une région. À Goma, où les apiculteurs de Mwarugo Honey
+                        récoltent un miel brut aux arômes uniques, chaque variété raconte une histoire de terroir, de
+                        saison et de savoir-faire. Des miels doux comme l’acacia aux miels corsés comme le châtaignier,
+                        chaque type offre des saveurs et des bienfaits distincts, parfaits pour la cuisine, les remèdes
+                        ou les soins. Explorez les principales variétés de miel, leurs caractéristiques et leurs
+                        utilisations culinaires et médicinales, et laissez-vous inspirer par ce cadeau sucré de la
+                        nature.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        1. Miel d’Acacia : La Douceur Délicate
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel d’acacia, récolté à partir des fleurs blanches de l’acacia, est l’un des miels les plus
+                        populaires grâce à sa douceur subtile et sa texture fluide.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Caractéristiques</b> : Couleur claire, presque transparente, avec un goût floral léger et
+                            une texture liquide qui ne cristallise presque jamais. À Goma, bien que moins courant, il
+                            peut être produit dans des zones où les acacias prospèrent.
+                        </li>
+
+                        <li>
+                            <b>Utilisations Culinaires</b> : Sa douceur neutre en fait un édulcorant idéal pour les
+                            boissons (thé, café, smoothies) sans altérer leur goût. Parfait pour napper des crêpes ou
+                            sucrer des yaourts locaux à base de lait de vache de Goma.
+                        </li>
+
+                        <li>
+                            <b>Bienfaits Médicinaux</b> : Faible en glucose, il est recommandé pour les personnes
+                            surveillant leur glycémie (avec modération). Ses propriétés apaisantes soulagent les maux de
+                            gorge lorsqu’il est ajouté à une tisane citronnée.
+                        </li>
+
+                        <li>
+                            <b>Astuce</b> : Mélangez une cuillère de miel d’acacia avec du lait tiède pour un rituel
+                            apaisant avant le coucher.
+                        </li>
+                    </ul>
+
+                    <h2 class="blog__points--main">
+                        2. Miel de Lavande : L’Élégance Provençale
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel de lavande, issu des champs violets emblématiques, est un favori des gourmets pour son
+                        parfum floral et sa texture crémeuse.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Caractéristiques</b> : Couleur dorée à ambrée, avec un arôme floral intense et un goût
+                            légèrement fruité. Bien que la lavande soit rare à Goma, des miels similaires aux notes
+                            florales sont produits localement à partir de fleurs sauvages.
+                        </li>
+                        <li>
+                            <b>Utilisations Culinaires</b> : Sublime les desserts, comme les panna cottas ou les
+                            biscuits sablés. Essayez-le dans une marinade pour du poulet grillé, combiné avec de l’huile
+                            d’olive et du romarin, pour une touche sophistiquée. À Goma, il rehausse les gâteaux de
+                            manioc traditionnels.
+                        </li>
+                        <li>
+                            <b>Bienfaits Médicinaux</b> : Ses propriétés antiseptiques et anti-inflammatoires aident à
+                            traiter les petites brûlures ou les piqûres d’insectes lorsqu’appliqué localement. En
+                            infusion, il favorise la relaxation et le sommeil.
+                        </li>
+
+                        <li>
+                            <b>Astuce</b> : Préparez un masque facial avec une cuillère de miel de lavande et du yaourt
+                            pour une peau hydratée et apaisée.
+                        </li>
+                    </ul>
+
+                    <h2 class="blog__points--main">
+                        3. Miel de Châtaignier : Le Caractère Corsé
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel de châtaignier, récolté des fleurs de châtaignier, est apprécié pour son goût robuste et
+                        son amertume subtile.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Caractéristiques</b> : Couleur ambrée foncée, avec une saveur boisée et une légère
+                            amertume qui persiste en bouche. À Goma, des miels aux notes similaires sont produits à
+                            partir d’arbres locaux comme l’eucalyptus.
+                        </li>
+
+                        <li>
+                            <b>Utilisations Culinaires</b> : Idéal pour les plats salés, comme une vinaigrette au miel
+                            et moutarde pour accompagner une salade de légumes grillés. Il ajoute une profondeur aux
+                            plats de viande, comme un gigot d’agneau mariné avec du miel et des épices locales. À Goma,
+                            essayez-le sur du pain de maïs artisanal.
+                        </li>
+
+                        <li>
+                            <b>Bienfaits Médicinaux</b> : Riche en antioxydants, il soutient la circulation sanguine et
+                            combat la fatigue. Ses propriétés antibactériennes en font un allié contre les infections
+                            respiratoires.
+                        </li>
+
+                        <li>
+                            <b>Astuce</b> : Une cuillère de miel de châtaignier dans une infusion de gingembre est un
+                            remède puissant contre les rhumes saisonniers à Goma.
+                        </li>
+                    </ul>
+
+                    <h2 class="blog__points--main">
+                        4. Miel de Fleurs Sauvages : La Symphonie de la Nature
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel de fleurs sauvages, ou miel toutes fleurs, est un mélange naturel des nectars de
+                        diverses plantes, typique des collines de Goma.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Caractéristiques</b> : Couleur variant du doré clair à l’ambré, avec un goût complexe
+                            mêlant notes florales, fruitées et parfois herbacées. Sa texture peut être liquide ou
+                            crémeuse, selon les saisons. C’est la variété phare de Mwarugo Honey, reflétant la
+                            biodiversité locale.
+                        </li>
+
+                        <li>
+                            <b>Utilisations Culinaires</b> : Polyvalent, il brille dans les recettes sucrées (gâteaux,
+                            smoothies) et salées (sauces pour poisson du lac Kivu). À Goma, il est délicieux tartiné sur
+                            du pain de manioc ou mélangé à une sauce au piment pour accompagner des brochettes.
+                        </li>
+
+                        <li>
+                            <b>Bienfaits Médicinaux</b> : Grâce à sa diversité florale, il contient une large gamme
+                            d’antioxydants et de micronutriments, renforçant l’immunité. Il peut aider à réduire les
+                            allergies saisonnières en exposant le corps à de petites doses de pollen local.
+                        </li>
+
+                        <li>
+                            <b>Astuce</b> : Diluez une cuillère de miel de fleurs sauvages dans de l’eau tiède avec du
+                            citron pour un boost matinal énergisant.
+                        </li>
+                    </ul>
+
+                    <h2 class="blog__points--main">
+                        5. Miel d’Eucalyptus : La Fraîcheur Boisée
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel d’eucalyptus, courant à Goma grâce aux arbres abondants, est prisé pour son goût
+                        distinct et ses vertus médicinales.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Caractéristiques</b> : Couleur ambrée moyenne, avec un arôme boisé et une saveur
+                            légèrement mentholée. Sa texture est souvent épaisse et peut cristalliser avec le temps.
+                        </li>
+
+                        <li>
+                            <b>Utilisations Culinaires</b> : Parfait pour les plats robustes, comme une marinade pour du
+                            poisson grillé ou une sauce barbecue. À Goma, il ajoute une touche unique aux desserts
+                            locaux, comme les beignets sucrés. Essayez-le dans une tisane pour une note réconfortante.
+                        </li>
+
+                        <li>
+                            <b>Bienfaits Médicinaux</b> : Ses propriétés expectorantes soulagent les affections
+                            respiratoires, comme la toux ou le rhume. Appliqué sur la peau, il apaise les irritations
+                            grâce à ses effets antibactériens.
+                        </li>
+
+                        <li>
+                            <b>Astuce</b> : Mélangez une cuillère de miel d’eucalyptus avec du thé au gingembre pour
+                            dégager les voies respiratoires pendant la saison des pluies.
+                        </li>
+                    </ul>
+
+                    <h2 class="blog__points--main">
+                        6. Miel de Manuka (pour comparaison) : L’Exception Médicinale
+                    </h2>
+
+                    <p class="blog__text">
+                        Bien que rare à Goma, le miel de manuka, originaire de Nouvelle-Zélande, est une référence
+                        mondiale pour ses propriétés médicinales. Nous l’incluons pour comparer avec les miels locaux.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Caractéristiques</b> : Couleur ambrée foncée, goût riche et texture crémeuse. Connu pour
+                            son indice MGO (methylglyoxal), qui mesure son activité antibactérienne.
+                        </li>
+
+                        <li>
+                            <b>Utilisations Culinaires</b> : Moins utilisé en cuisine en raison de son coût, il est
+                            souvent consommé pur ou ajouté à des boissons chaudes. À Goma, le miel d’eucalyptus peut
+                            être une alternative locale pour des usages similaires.
+                        </li>
+
+                        <li>
+                            <b>Bienfaits Médicinaux</b> : Exceptionnel pour traiter les infections, les ulcères
+                            d’estomac et les plaies. Il renforce l’immunité et apaise les inflammations.
+                        </li>
+
+                        <li>
+                            <b>Astuce</b> : Si vous trouvez du manuka, prenez une petite cuillère quotidienne pour
+                            booster votre santé. Sinon, le miel d’eucalyptus local offre des bienfaits comparables à
+                            moindre coût.
+                        </li>
+                    </ul>
+
+                    <h2 class="blog__points--main">
+                        7. Conseils pour Choisir et Utiliser le Miel
+                    </h2>
+
+                    <p class="blog__text">
+                        Pour tirer le meilleur parti des variétés de miel, suivez ces recommandations :
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Choisissez du miel brut</b> : Préférez le miel non pasteurisé, comme celui de Mwarugo
+                            Honey, pour conserver ses bienfaits et ses saveurs. À Goma, achetez auprès d’apiculteurs
+                            locaux pour garantir l’authenticité.
+                        </li>
+
+                        <li>
+                            <b>Stockage</b> : Conservez le miel dans un endroit frais et sec, à l’abri de la lumière. La
+                            cristallisation est naturelle et n’altère pas la qualité ; réchauffez doucement au
+                            bain-marie pour le liquéfier.
+                        </li>
+
+                        <li>
+                            <b>Dosage</b> : Le miel est plus sucré que le sucre ; utilisez environ 2/3 de la quantité
+                            indiquée dans les recettes. Pour les remèdes, une cuillère à café ou à soupe suffit.
+                        </li>
+
+                        <li>
+                            <b>Précautions</b> : Évitez de donner du miel aux enfants de moins d’un an (risque de
+                            botulisme). Testez une petite quantité si vous suspectez une allergie au pollen.
+                        </li>
+                    </ul>
+
+                    <h2 class="blog__points--main">
+                        8. Le Miel de Goma : Une Variété à Célébrer
+                    </h2>
+
+                    <p class="blog__text">
+                        À Goma, le miel de fleurs sauvages et d’eucalyptus domine, reflétant la richesse des collines
+                        volcaniques. Ces variétés locales, produites par les apiculteurs de Mwarugo Honey, rivalisent
+                        avec les miels renommés comme l’acacia ou la lavande par leur authenticité et leur lien au
+                        terroir. En cuisine, elles transforment les plats traditionnels, du poisson grillé aux beignets
+                        sucrés. En médecine, elles soignent les maux quotidiens, des rhumes aux irritations cutanées,
+                        soutenant la santé des familles de Goma.
+
+                        <br>
+                        <br>
+
+                        En choisissant le miel local, vous soutenez les apiculteurs et la biodiversité, tout en
+                        savourant un produit unique. Chaque pot est une ode à la nature et à la communauté.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        Conclusion
+                    </h2>
+
+                    <p class="blog__text">
+                        Les variétés de miel, de l’acacia délicat au châtaignier robuste, offrent une palette de saveurs
+                        et de bienfaits pour enrichir votre cuisine et votre santé. À Goma, le miel brut de Mwarugo
+                        Honey incarne cette diversité, capturant l’essence des fleurs sauvages et l’amour des
+                        apiculteurs. Que vous l’utilisiez pour sucrer une tisane, sublimer un plat ou soigner un rhume,
+                        le miel est un trésor polyvalent. Explorez ces variétés, laissez-vous guider par leurs arômes,
+                        et rejoignez-nous pour célébrer la douceur naturelle de Goma !
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="section-footer u-margin-top-huge">
+            <div class="section-footer__links">
+                <a href="/index.html" class="footer__logo-container">
+                    <img src="../img/bee-logo.png" alt="Logo" class="logo">
+
+                    <p class="footer__brand-name">
+                        Mwarugo honey
+                    </p>
+                </a>
+
+                <div class="footer__navigation-link">
+                    <h5 class="footer__heading">
+                        Explorez
+                    </h5>
+
+                    <ul class="footer__links-box">
+                        <a href="/index.html" class="footer__link ">
+                            Accueil
+                        </a>
+
+                        <a href="/products.html" class="footer__link ">
+                            Nos produits
+                        </a>
+
+                        <a href="/blog.html" class="footer__link ">
+                            Blog
+                        </a>
+
+                        <a href="/about.html" class="footer__link ">
+                            À propos
+                        </a>
+
+                        <a href="/contact.html" class="footer__link ">
+                            Contact
+                        </a>
+
+                        <a href="/reviews.html" class="footer__link ">
+                            Témoignages
+                        </a>
+
+                        <a href="/faq.html" class="footer__link ">
+                            Questions fréquentes
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h5 class="footer__heading">
+                        Réseaux sociaux
+                    </h5>
+
+                    <div class="footer__social--link-container">
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon instagram"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Instagram
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon facebook"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Facebook
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon whatsapp"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Whatsapp
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon twitter"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Twitter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__legal">
+                    <h5 class="footer__heading">
+                        Rejoignez Notre Ruche
+                    </h5>
+
+                    <ul class="footer__links-box">
+                        <a href="/" class="footer__link ">
+                            Politique de Confidentialité
+                        </a>
+
+                        <a href="/" class="footer__link ">
+                            Conditions d’Utilisation
+                        </a>
+
+                        <a href="/" class="footer__link ">
+                            Conditions de vente
+                        </a>
+
+                        <a href="/" class="footer__link ">
+                            Politique de remboursement
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__contact-container">
+                    <h5 class="footer__heading">
+                        Rejoignez Notre Ruche
+                    </h5>
+
+                    <p class="footer__contact--text">
+                        Inscrivez-vous pour recevoir des nouvelles de
+
+                        <span>
+                            Mwarugo Honey
+                        </span>
+
+                        , des recettes savoureuses et des offres exclusives directement dans votre boîte de réception !
+                    </p>
+
+                    <form action="/submit-form" method="post" class="footer__form">
+                        <input type="email" id="email" name="email" class="form__group--input" placeholder="Email"
+                            required>
+
+                        <button class="btn btn__form btn__form--footer" type="submit">
+                            Envoyer
+                        </button>
+                    </form>
+
+                    <div class="footer__contact">
+                        <h5 class="footer__heading">
+                            Nos contacts
+                        </h5>
+
+                        <ul class="footer__contact--info">
+                            <li>
+                                Email :
+
+                                <a href="mailto:info@example.com" class="email">
+                                    info@example.com
+                                </a>
+                            </li>
+
+                            <li>
+                                Téléphone : +243 123 456 789
+                            </li>
+
+                            <li>
+                                Adresse: 123 Rue du Miel, Goma, RDC
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="separator"></div> -->
+
+            <p class="footer__credentials">
+                &copy; 2025 Mwarugo Honey. Tous droits réservés. | By
+
+                <a href="" class="designer">
+                    Glody
+                </a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="/js/vendor.js" defer></script>
+    <script src="/js/reading-time-calc.js" defer></script>
+</body>
+
+</html>
