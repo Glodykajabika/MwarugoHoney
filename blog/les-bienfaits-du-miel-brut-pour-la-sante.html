@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iansui&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/img/bee.png" />
+
+    <title>MH | BLOG</title>
+</head>
+
+<body>
+    <nav class="nav header__navbar">
+        <a href="/index.html">
+            <img src="/img/bee-logo.png" alt="Logo" class="logo">
+        </a>
+
+        <ul class="header__links-box">
+            <a href="/index.html" class="header__link header__link--1 hexagonal-borders">
+                Accueil
+            </a>
+
+            <a href="/products.html" class="header__link header__link--2 hexagonal-borders">
+                Nos produits
+            </a>
+
+            <a href="/blog.html" class="header__link header__link--3 hexagonal-borders">
+                Blog
+            </a>
+
+            <a href="/about.html" class="header__link header__link--4 hexagonal-borders">
+                À propos
+            </a>
+
+            <a href="/contact.html" class="header__link header__link--5 hexagonal-borders">
+                Contact
+            </a>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div class="mini-header">
+            <a href="/index.html">
+                <img src="/img/bee-logo.png" alt="Logo" class="logo">
+            </a>
+
+            <h1 class="header__heading">
+                Blog
+            </h1>
+
+            <!-- icon of cart -->
+            <a href="#" class="icon cart cart__product"></a>
+        </div>
+
+        <section class="section-article">
+            <div class="blog__article article">
+                <h1 class="article__heading">
+                    Les Bienfaits du Miel Brut pour la Santé
+                </h1>
+
+                <h2 class="article__description">
+                    Explorez les propriétés curatives du miel brut et ses avantages pour la digestion, la peau et
+                    l'immunité.
+                </h2>
+
+                <div class="article__info-container">
+                    <!-- ! I will be using the card classes here since the styles and link to js they possess will be quite the same for the article page as well -->
+
+                    <p class="card__category card__category--blog">
+                        Santé et Bien-être
+                    </p>
+
+                    <div class="article__date-time-container">
+                        <div class="card__section-blog--time-container">
+                            <p class="card__section-blog--time">
+                                <!-- Time it take to read the article, realtime update from js -->
+                            </p>
+
+                            <!-- <i class="icon open-book"></i> -->
+                        </div>
+
+                        <span class="dot" aria-hidden: true;></span>
+
+                        <p class="card__section-blog--date">
+                            15 Jan. 2025
+                        </p>
+                    </div>
+                </div>
+
+                <div class="article__img-container">
+                    <img src="/img/benefits-of-honey.jpg" alt="" class="img article__img">
+                </div>
+
+                <div class="blog-content">
+                    <p class="blog__text">
+                        Le miel brut, ce nectar doré produit par les abeilles à partir des fleurs sauvages, est bien
+                        plus qu’un simple édulcorant naturel. Récolté avec soin dans les collines de Goma, le miel brut
+                        de Mwarugo Honey est un trésor de la nature, regorgeant de nutriments et de propriétés
+                        curatives. Contrairement au miel transformé, qui perd ses bienfaits à cause de la
+                        pasteurisation, le miel brut conserve ses enzymes, antioxydants et composés bioactifs. Découvrez
+                        comment ce superaliment peut améliorer votre digestion, sublimer votre peau et renforcer votre
+                        immunité, tout en vous offrant une alternative saine pour une vie équilibrée.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        1. Un allié pour une digestion harmonieuse
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel brut est un remède traditionnel pour apaiser le système digestif. Grâce à ses enzymes
+                        naturelles, comme l’amylase et la protéase, il facilite la décomposition des aliments, réduisant
+                        les inconforts tels que les ballonnements ou les brûlures d’estomac. À Goma, les anciens
+                        recommandent une cuillère de miel brut diluée dans de l’eau tiède le matin pour stimuler la
+                        digestion et équilibrer la flore intestinale.
+
+                        <br>
+                        <br>
+
+                        Ses propriétés prébiotiques nourrissent les bonnes bactéries dans l’intestin, favorisant une
+                        santé digestive optimale. De plus, le miel brut peut soulager les symptômes de la gastrite ou
+                        des ulcères grâce à ses effets anti-inflammatoires. Pour un effet apaisant, essayez une infusion
+                        de camomille avec une touche de miel brut avant le coucher – un rituel simple pour un ventre
+                        heureux.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        2. Une solution naturelle pour une peau éclatante
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel brut est un ingrédient vedette dans les soins de la peau, et ce n’est pas sans raison.
+                        Ses propriétés antibactériennes et antifongiques en font un excellent traitement pour l’acné,
+                        réduisant les inflammations et empêchant la prolifération des bactéries. À Goma, les femmes
+                        utilisent depuis longtemps le miel brut comme masque facial pour hydrater et adoucir la peau,
+                        surtout pendant la saison sèche.
+
+                        <br>
+                        <br>
+
+                        Riche en antioxydants, comme les polyphénols, le miel brut protège la peau contre les dommages
+                        causés par les radicaux libres, retardant les signes du vieillissement. Il agit également comme
+                        un humectant naturel, attirant l’humidité pour une peau souple et lumineuse. Pour un soin
+                        maison, mélangez une cuillère à soupe de miel brut avec du yaourt nature et appliquez sur le
+                        visage pendant 15 minutes. Votre peau vous remerciera avec un éclat naturel !
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        3. Un boost pour le système immunitaire
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel brut est un allié puissant pour renforcer vos défenses naturelles. Ses composés
+                        antimicrobiens, comme le peroxyde d’hydrogène naturel, aident à combattre les infections
+                        bactériennes et virales. À Goma, où les saisons peuvent apporter rhumes et grippes, une cuillère
+                        de miel brut quotidienne est un remède populaire pour rester en forme.
+
+                        <br>
+                        <br>
+
+                        Ses antioxydants soutiennent le système immunitaire en réduisant le stress oxydatif, tandis que
+                        ses traces de pollen local peuvent aider à desensitiser le corps aux allergies saisonnières.
+                        Pour un effet maximal, combinez le miel brut avec du citron frais et du gingembre dans une
+                        tisane chaude – une boisson réconfortante qui protège votre santé. Les enfants, en particulier,
+                        adorent cette alternative naturelle pour apaiser les maux de gorge et renforcer leur immunité.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        4. Un énergisant naturel pour le corps et l’esprit
+                    </h2>
+
+                    <p class="blog__text">
+                        Au-delà de ses bienfaits spécifiques, le miel brut est une source d’énergie saine. Ses sucres
+                        naturels, le fructose et le glucose, sont rapidement absorbés par le corps, offrant un regain
+                        d’énergie sans les pics de glycémie causés par le sucre raffiné. À Goma, les agriculteurs et les
+                        artisans consomment souvent du miel brut avant une longue journée de travail pour rester alertes
+                        et dynamiques.
+
+                        <br>
+                        <br>
+
+                        Le miel brut contient également de petites quantités de vitamines (comme la vitamine C et les
+                        vitamines B) et de minéraux (comme le potassium et le magnésium), qui soutiennent le métabolisme
+                        et la santé mentale. Une tartine de pain complet avec du miel brut au petit-déjeuner est un
+                        moyen délicieux de commencer la journée avec vitalité et bonne humeur.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        5. Comment intégrer le miel brut dans votre routine
+                    </h2>
+
+                    <p class="blog__text">
+                        Pour profiter pleinement des bienfaits du miel brut, voici quelques idées simples :
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>En cuisine</b> : Remplacez le sucre par du miel brut dans vos recettes de gâteaux,
+                            smoothies ou vinaigrettes. Essayez une sauce au miel et moutarde pour accompagner vos plats
+                            locaux.
+                        </li>
+
+                        <li>
+                            <b>En boisson</b> : Ajoutez une cuillère de miel brut à votre thé, café ou eau citronnée.
+                            Évitez l’eau bouillante pour préserver ses enzymes.
+                        </li>
+
+                        <li>
+                            <b>En soin</b> : Utilisez le miel brut comme masque capillaire (mélangé avec de l’huile de
+                            coco) ou comme gommage doux pour les lèvres.
+                        </li>
+
+                        <li>
+                            <b>En remède</b> : Prenez une cuillère de miel brut pur pour calmer une toux ou favoriser le
+                            sommeil.
+                        </li>
+                    </ul>
+
+                    <p class="blog__text">
+                        Choisissez toujours du miel brut, non filtré et non pasteurisé, comme celui de Mwarugo Honey,
+                        pour garantir une qualité optimale. À Goma, soutenez les apiculteurs locaux qui produisent ce
+                        trésor avec respect pour la nature.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        Précautions à prendre
+                    </h2>
+
+                    <p class="blog__text">
+                        Bien que le miel brut soit généralement sûr, quelques précautions s’imposent :
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Enfants de moins d’un an</b> : Ne donnez pas de miel aux bébés en raison du risque de
+                            botulisme infantile.
+                        </li>
+
+                        <li>
+                            <b>Allergies</b> : Si vous êtes allergique au pollen ou aux produits apicoles, testez une
+                            petite quantité avant une consommation régulière.
+                        </li>
+
+                        <li>
+                            <b>Modération</b> : Le miel reste un sucre naturel ; consommez-le avec modération, surtout
+                            si vous surveillez votre glycémie.
+                        </li>
+                    </ul>
+
+                    <p class="blog__text">
+                        Consultez un médecin si vous avez des préoccupations spécifiques, notamment pour des affections
+                        médicales graves.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        Conclusion
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel brut est un cadeau de la nature, offrant des bienfaits pour la digestion, la peau et
+                        l’immunité, tout en ajoutant une touche de douceur à votre quotidien. À Goma, où chaque pot de
+                        Mwarugo Honey capture l’essence des fleurs sauvages, ce superaliment incarne la richesse de
+                        notre terre et la passion de nos apiculteurs. Intégrez le miel brut dans votre routine et
+                        découvrez comment un simple ingrédient peut transformer votre santé et votre bien-être. Prêt à
+                        savourer ses vertus ? Rejoignez-nous dans cette aventure sucrée et naturelle !
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="section-footer u-margin-top-huge">
+            <div class="section-footer__links">
+                <a href="/index.html" class="footer__logo-container">
+                    <img src="../img/bee-logo.png" alt="Logo" class="logo">
+
+                    <p class="footer__brand-name">
+                        Mwarugo honey
+                    </p>
+                </a>
+
+                <div class="footer__navigation-link">
+                    <h5 class="footer__heading">
+                        Explorez
+                    </h5>
+
+                    <ul class="footer__links-box">
+                        <a href="/index.html" class="footer__link ">
+                            Accueil
+                        </a>
+
+                        <a href="/products.html" class="footer__link ">
+                            Nos produits
+                        </a>
+
+                        <a href="/blog.html" class="footer__link ">
+                            Blog
+                        </a>
+
+                        <a href="/about.html" class="footer__link ">
+                            À propos
+                        </a>
+
+                        <a href="/contact.html" class="footer__link ">
+                            Contact
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h5 class="footer__heading">
+                        Réseaux sociaux
+                    </h5>
+
+                    <div class="footer__social--link-container">
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon instagram"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Instagram
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon facebook"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Facebook
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon whatsapp"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Whatsapp
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon twitter"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Twitter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__legal">
+                    <h5 class="footer__heading">
+                        Rejoignez Notre Ruche
+                    </h5>
+
+                    <ul class="footer__links-box">
+                        <a href="/index.html" class="footer__link ">
+                            Accueil
+                        </a>
+
+                        <a href="/products.html" class="footer__link ">
+                            Nos produits
+                        </a>
+
+                        <a href="/blog.html" class="footer__link ">
+                            Blog
+                        </a>
+
+                        <a href="/about.html" class="footer__link ">
+                            À propos
+                        </a>
+
+                        <a href="/contact.html" class="footer__link ">
+                            Contact
+                        </a>
+
+                        <a href="/reviews.html" class="footer__link ">
+                            Témoignages
+                        </a>
+
+                        <a href="/faq.html" class="footer__link ">
+                            Questions fréquentes
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__contact-container">
+                    <h5 class="footer__heading">
+                        Rejoignez Notre Ruche
+                    </h5>
+
+                    <p class="footer__contact--text">
+                        Inscrivez-vous pour recevoir des nouvelles de
+
+                        <span>
+                            Mwarugo Honey
+                        </span>
+
+                        , des recettes savoureuses et des offres exclusives directement dans votre boîte de réception !
+                    </p>
+
+                    <form action="/submit-form" method="post" class="footer__form">
+                        <input type="email" id="email" name="email" class="form__group--input" placeholder="Email"
+                            required>
+
+                        <button class="btn btn__form btn__form--footer" type="submit">
+                            Envoyer
+                        </button>
+                    </form>
+
+                    <div class="footer__contact">
+                        <h5 class="footer__heading">
+                            Nos contacts
+                        </h5>
+
+                        <ul class="footer__contact--info">
+                            <li>
+                                Email :
+
+                                <a href="mailto:info@example.com" class="email">
+                                    info@example.com
+                                </a>
+                            </li>
+
+                            <li>
+                                Téléphone : +243 123 456 789
+                            </li>
+
+                            <li>
+                                Adresse: 123 Rue du Miel, Goma, RDC
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="separator"></div> -->
+
+            <p class="footer__credentials">
+                &copy; 2025 Mwarugo Honey. Tous droits réservés. | By
+
+                <a href="" class="designer">
+                    Glody
+                </a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="/js/vendor.js" defer></script>
+    <script src="/js/reading-time-calc.js" defer></script>
+</body>
+
+</html>
