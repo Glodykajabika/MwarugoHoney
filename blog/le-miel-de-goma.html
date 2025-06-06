@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iansui&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/img/bee.png" />
+
+    <title>MH | BLOG</title>
+</head>
+
+<body>
+    <nav class="nav header__navbar">
+        <a href="/index.html">
+            <img src="/img/bee-logo.png" alt="Logo" class="logo">
+        </a>
+
+        <ul class="header__links-box">
+            <a href="/index.html" class="header__link header__link--1 hexagonal-borders">
+                Accueil
+            </a>
+
+            <a href="/products.html" class="header__link header__link--2 hexagonal-borders">
+                Nos produits
+            </a>
+
+            <a href="/blog.html" class="header__link header__link--3 hexagonal-borders">
+                Blog
+            </a>
+
+            <a href="/about.html" class="header__link header__link--4 hexagonal-borders">
+                À propos
+            </a>
+
+            <a href="/contact.html" class="header__link header__link--5 hexagonal-borders">
+                Contact
+            </a>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div class="mini-header">
+            <a href="/index.html">
+                <img src="/img/bee-logo.png" alt="Logo" class="logo">
+            </a>
+
+            <h1 class="header__heading">
+                Blog
+            </h1>
+
+            <!-- icon of cart -->
+            <a href="#" class="icon cart cart__product"></a>
+        </div>
+
+        <section class="section-article">
+            <div class="blog__article article">
+                <h1 class="article__heading">
+                    Le Miel de Goma : Un Trésor Local
+                </h1>
+
+                <h2 class="article__description">
+                    Explorez les saveurs uniques du miel produit dans la région de Goma et son impact sur la communauté.
+                </h2>
+
+                <div class="article__info-container">
+                    <!-- ! I will be using the card classes here since the styles and link to js they possess will be quite the same for the article page as well -->
+
+                    <p class="card__category card__category--blog">
+                        Miel local
+                    </p>
+
+                    <div class="article__date-time-container">
+                        <div class="card__section-blog--time-container">
+                            <p class="card__section-blog--time">
+                                <!-- Time it take to read the article, realtime update from js -->
+                            </p>
+
+                            <!-- <i class="icon open-book"></i> -->
+                        </div>
+
+                        <span class="dot" aria-hidden: true;></span>
+
+                        <p class="card__section-blog--date">
+                            18 Févr. 2025
+                        </p>
+                    </div>
+                </div>
+
+                <div class="article__img-container">
+                    <img src="/img/honey-honeycomb.jpeg" alt="" class="img article__img">
+                </div>
+
+                <div class="blog-content">
+                    <p class="blog__text">
+                        Dans les collines verdoyantes de Goma, où les fleurs sauvages s’épanouissent sous un soleil
+                        généreux, le miel brut de Mwarugo Honey capture l’essence d’un terroir riche et vibrant. Ce
+                        trésor local, façonné par les abeilles et les apiculteurs passionnés de la région, se distingue
+                        par ses saveurs uniques, mêlant des notes florales, fruitées et parfois légèrement boisées.
+                        Au-delà de sa délicatesse gustative, le miel de Goma est un moteur de développement
+                        communautaire, soutenant les familles, préservant l’environnement et célébrant l’héritage
+                        culturel de la région. Plongez dans l’univers de ce nectar doré et découvrez pourquoi il est
+                        bien plus qu’un simple produit : c’est un symbole d’unité et de fierté pour Goma.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        1. Les saveurs uniques du miel de Goma
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel de Goma tire sa singularité de la biodiversité exceptionnelle de la région. Les abeilles
+                        butinent une mosaïque de fleurs sauvages, comme l’eucalyptus, les acacias et les plantes
+                        indigènes des collines volcaniques, créant un miel aux arômes complexes. Contrairement aux miels
+                        industriels, le miel brut de Goma n’est ni pasteurisé ni filtré, préservant ses enzymes, ses
+                        antioxydants et son caractère authentique.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Profil gustatif</b> : Selon les saisons et les floraisons, le miel de Goma peut offrir
+                            des notes sucrées et florales, avec des touches de caramel ou de fruits tropicaux. Certains
+                            lots, influencés par les plantes locales, présentent une légère amertume ou une texture
+                            crémeuse qui fond en bouche.
+                        </li>
+
+                        <li>
+                            <b>Couleur et texture</b> : D’un doré pâle à un ambré profond, sa consistance varie de
+                            liquide à crémeuse, reflétant la diversité des nectars collectés.
+                        </li>
+
+                        <li>
+                            <b>Comparaison</b> : À l’image du miel de lavande de Provence ou du miel de manuka de
+                            Nouvelle-Zélande, le miel de Goma se distingue par son lien intime avec son terroir,
+                            comparable aux miels rares prisés pour leur origine unique.
+                        </li>
+                    </ul>
+
+                    <p class="blog__text">
+                        Ce miel est un voyage sensoriel, capturant l’âme des paysages de Goma dans chaque cuillère.
+                        Dégustez-le pur, sur du pain de manioc local, ou dans une tisane pour apprécier sa richesse.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        2. Une tradition apicole ancrée dans la culture
+                    </h2>
+
+                    <p class="blog__text">
+                        L’apiculture à Goma est une pratique ancestrale, transmise de génération en génération. Les
+                        apiculteurs, souvent des agriculteurs familiaux, utilisent des techniques traditionnelles
+                        combinées à des méthodes modernes, comme les ruches Langstroth, pour produire un miel de
+                        qualité. À Mwarugo Honey, nous collaborons avec ces artisans qui placent le respect des abeilles
+                        et de la nature au cœur de leur travail.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Savoir-faire local</b> : Les apiculteurs de Goma sélectionnent soigneusement les
+                            emplacements des ruches, près des collines ou des forêts, pour maximiser la diversité
+                            florale. Ils récoltent le miel à la main, garantissant une production artisanale.
+                        </li>
+
+                        <li>
+                            <b>Rôle communautaire</b> : L’apiculture renforce les liens sociaux, avec des familles et
+                            des voisins partageant leurs connaissances lors des récoltes ou des formations. Cette
+                            tradition reflète l’esprit de solidarité de Goma, où la communauté est une force vive.
+                        </li>
+                    </ul>
+
+                    <p class="blog__text">
+                        Cette pratique ne produit pas seulement du miel ; elle perpétue un héritage culturel, célébrant
+                        l’harmonie entre l’homme et la nature.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        3. Un impact économique pour la communauté
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel de Goma est un moteur de développement local, offrant des opportunités économiques aux
+                        familles et renforçant l’autonomie des communautés. Dans une région marquée par des défis
+                        économiques, l’apiculture est une activité durable et accessible.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Emploi et revenus</b> : Chaque ruche génère des revenus pour les apiculteurs, qui vendent
+                            leur miel sur les marchés de Goma ou à des entreprises comme Mwarugo Honey. Une ruche
+                            moderne peut produire jusqu’à 20 kg de miel par an, offrant un complément de revenu
+                            significatif.
+                        </li>
+
+                        <li>
+                            <b>Autonomisation des femmes</b> : À l’image de projets comme celui en Angola, où
+                            l’apiculture soutient les femmes rurales, de nombreuses femmes à Goma s’impliquent dans la
+                            production et la vente de miel, gagnant en indépendance financière.
+                        </li>
+
+                        <li>
+                            <b>Soutien aux marchés locaux</b> : En achetant du miel de Goma, les consommateurs stimulent
+                            l’économie locale, des apiculteurs aux vendeurs des marchés comme celui de Kituku. Les pots
+                            de miel, souvent vendus dans des bocaux en verre réutilisables, incarnent cette économie
+                            circulaire.
+                        </li>
+                    </ul>
+
+                    <p class="blog__text">
+                        En choisissant le miel local, vous investissez dans les familles et les rêves de Goma, tout en
+                        savourant un produit d’exception.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        4. Un atout pour l’environnement
+                    </h2>
+
+                    <p class="blog__text">
+                        L’apiculture à Goma va de pair avec la conservation de l’environnement. Les abeilles, en
+                        pollinisant les plantes, soutiennent l’agriculture locale et la biodiversité, essentielles dans
+                        une région proche du parc national des Virunga.
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Pollinisation</b> : Les abeilles de Goma pollinisent des cultures comme les avocats, les
+                            haricots et les bananes, augmentant les rendements agricoles. Environ un tiers de la
+                            production alimentaire mondiale dépend des pollinisateurs, un rôle crucial dans la sécurité
+                            alimentaire locale.
+                        </li>
+
+                        <li>
+                            <b>Préservation des habitats</b> : Les apiculteurs protègent les zones naturelles en évitant
+                            la déforestation autour des ruches. À Mwarugo Honey, nous plantons des arbres mellifères
+                            pour enrichir les sources de nectar, contribuant à la reforestation.
+                        </li>
+
+                        <li>
+                            <b>Pratiques durables</b> : Nos apiculteurs utilisent des traitements naturels contre les
+                            parasites, comme l’acide oxalique, et évitent les pesticides, protégeant les abeilles et
+                            l’écosystème.
+                        </li>
+                    </ul>
+
+                    <p class="blog__text">
+                        Le miel de Goma est un produit vert, réduisant l’impact environnemental tout en soutenant la
+                        nature, à l’image des initiatives écoresponsables au Bénin.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        5. Les défis et l’avenir de l’apiculture à Goma
+                    </h2>
+
+                    <p class="blog__text">
+                        Malgré ses atouts, l’apiculture à Goma fait face à des obstacles :
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>Changement climatique</b> : Les pluies irrégulières perturbent les floraisons, réduisant
+                            les ressources pour les abeilles.
+                        </li>
+
+                        <li>
+                            <b>Manque de ressources</b> : Certains apiculteurs manquent d’équipements modernes ou de
+                            formations, limitant leur production.
+                        </li>
+
+                        <li>
+                            <b>Concurrence</b> : Les miels importés, souvent moins chers mais de moindre qualité,
+                            concurrencent le miel local, comme observé au Maroc.
+                        </li>
+                    </ul>
+
+                    <p class="blog__text">
+                        Pour surmonter ces défis, Mwarugo Honey s’engage à :
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            Former les apiculteurs aux techniques modernes.
+                        </li>
+
+                        <li>
+                            Promouvoir le miel de Goma sur les marchés nationaux et internationaux.
+                        </li>
+
+                        <li>
+                            Sensibiliser les consommateurs à l’importance d’acheter local.
+                        </li>
+                    </ul>
+
+                    <p class="blog__text">
+                        L’avenir du miel de Goma repose sur un soutien collectif, des apiculteurs aux clients, pour
+                        faire briller ce trésor à sa juste valeur.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        6. Comment savourer et soutenir le miel de Goma
+                    </h2>
+
+                    <p class="blog__text">
+                        Intégrer le miel de Goma dans votre quotidien est une façon délicieuse de soutenir la région :
+                    </p>
+
+                    <ul class="blog__instructions">
+                        <li>
+                            <b>En cuisine</b> : Utilisez-le dans des recettes locales, comme une sauce au miel pour
+                            accompagner le poisson du lac Kivu, ou dans des desserts comme le gâteau de manioc au miel.
+                        </li>
+
+                        <li>
+                            <b>En remède</b> : Une cuillère de miel brut avec du citron soulage les maux de gorge, un
+                            usage traditionnel à Goma.
+                        </li>
+
+                        <li>
+                            <b>En cadeau</b> : Offrez un pot de miel Mwarugo Honey, emballé avec soin, pour partager la
+                            richesse de Goma.
+                        </li>
+                    </ul>
+
+                    <p class="blog__text">
+                        Achetez directement auprès des apiculteurs sur les marchés de Goma ou via notre site,
+                        garantissant un produit authentique et un impact direct sur la communauté.
+                    </p>
+
+                    <h2 class="blog__points--main">
+                        Conclusion
+                    </h2>
+
+                    <p class="blog__text">
+                        Le miel de Goma est un trésor local, mêlant des saveurs uniques à un impact profond sur la
+                        communauté et l’environnement. Chaque pot de Mwarugo Honey raconte une histoire : celle des
+                        abeilles qui dansent parmi les fleurs, des apiculteurs qui travaillent avec passion, et d’une
+                        région qui prospère grâce à la nature. En choisissant ce miel, vous savourez l’essence de Goma
+                        tout en soutenant un avenir durable. Rejoignez-nous pour célébrer ce nectar doré et faire
+                        rayonner le trésor de notre terre !
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="section-footer u-margin-top-huge">
+            <div class="section-footer__links">
+                <a href="/index.html" class="footer__logo-container">
+                    <img src="../img/bee-logo.png" alt="Logo" class="logo">
+
+                    <p class="footer__brand-name">
+                        Mwarugo honey
+                    </p>
+                </a>
+
+                <div class="footer__navigation-link">
+                    <h5 class="footer__heading">
+                        Explorez
+                    </h5>
+
+                    <ul class="footer__links-box">
+                        <a href="/index.html" class="footer__link ">
+                            Accueil
+                        </a>
+
+                        <a href="/products.html" class="footer__link ">
+                            Nos produits
+                        </a>
+
+                        <a href="/blog.html" class="footer__link ">
+                            Blog
+                        </a>
+
+                        <a href="/about.html" class="footer__link ">
+                            À propos
+                        </a>
+
+                        <a href="/contact.html" class="footer__link ">
+                            Contact
+                        </a>
+
+                        <a href="/reviews.html" class="footer__link ">
+                            Témoignages
+                        </a>
+
+                        <a href="/faq.html" class="footer__link ">
+                            Questions fréquentes
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h5 class="footer__heading">
+                        Réseaux sociaux
+                    </h5>
+
+                    <div class="footer__social--link-container">
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon instagram"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Instagram
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon facebook"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Facebook
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon whatsapp"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Whatsapp
+                            </p>
+                        </div>
+
+                        <div class="iconName-container">
+                            <a href="#" class="icon-container">
+                                <i class="icon contact__info--icon twitter"></i>
+                            </a>
+
+                            <p class="icon__name">
+                                Twitter
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__legal">
+                    <h5 class="footer__heading">
+                        Rejoignez Notre Ruche
+                    </h5>
+
+                    <ul class="footer__links-box">
+                        <a href="/" class="footer__link ">
+                            Politique de Confidentialité
+                        </a>
+
+                        <a href="/" class="footer__link ">
+                            Conditions d’Utilisation
+                        </a>
+
+                        <a href="/" class="footer__link ">
+                            Conditions de vente
+                        </a>
+
+                        <a href="/" class="footer__link ">
+                            Politique de remboursement
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="footer__contact-container">
+                    <h5 class="footer__heading">
+                        Rejoignez Notre Ruche
+                    </h5>
+
+                    <p class="footer__contact--text">
+                        Inscrivez-vous pour recevoir des nouvelles de
+
+                        <span>
+                            Mwarugo Honey
+                        </span>
+
+                        , des recettes savoureuses et des offres exclusives directement dans votre boîte de réception !
+                    </p>
+
+                    <form action="/submit-form" method="post" class="footer__form">
+                        <input type="email" id="email" name="email" class="form__group--input" placeholder="Email"
+                            required>
+
+                        <button class="btn btn__form btn__form--footer" type="submit">
+                            Envoyer
+                        </button>
+                    </form>
+
+                    <div class="footer__contact">
+                        <h5 class="footer__heading">
+                            Nos contacts
+                        </h5>
+
+                        <ul class="footer__contact--info">
+                            <li>
+                                Email :
+
+                                <a href="mailto:info@example.com" class="email">
+                                    info@example.com
+                                </a>
+                            </li>
+
+                            <li>
+                                Téléphone : +243 123 456 789
+                            </li>
+
+                            <li>
+                                Adresse: 123 Rue du Miel, Goma, RDC
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="separator"></div> -->
+
+            <p class="footer__credentials">
+                &copy; 2025 Mwarugo Honey. Tous droits réservés. | By
+
+                <a href="" class="designer">
+                    Glody
+                </a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="/js/vendor.js" defer></script>
+    <script src="/js/reading-time-calc.js" defer></script>
+</body>
+
+</html>
