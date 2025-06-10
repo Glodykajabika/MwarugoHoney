@@ -1002,6 +1002,22 @@ body {
   margin: 10rem auto 15rem;
   max-width: 90rem; }
 
+.email:hover {
+  transition: all 0.3s ease-in-out;
+  color: #FF8C00; }
+
+.legal__update-time {
+  margin-bottom: 4rem;
+  text-align: right; }
+
+.firm__name {
+  text-transform: capitalize;
+  color: #DAA520;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; }
+  .firm__name:hover {
+    color: #9f7020; }
+
 .about-container {
   display: flex;
   justify-content: space-around;

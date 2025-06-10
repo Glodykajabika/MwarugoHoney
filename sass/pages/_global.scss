@@ -1,4 +1,3 @@
-
 .logo {
     border-radius: 50%;
     height: 10rem;
@@ -37,11 +36,11 @@
             cursor: pointer;
             font-size: 4.7rem;
             color: $color-primary-light-1;
-        } 
+        }
     }
 
     .cart__product {
-        width:  3.5rem;
+        width: 3.5rem;
         height: 3.5rem;
     }
 }
@@ -49,4 +48,25 @@
 .section-intro {
     margin: 10rem auto 15rem;
     max-width: 90rem;
+}
+
+.email:hover {
+    transition: all 0.3s ease-in-out;
+    color: $color-secondary-dark-3;
+}
+
+.legal__update-time {
+    margin-bottom: 4rem;
+    text-align: right;
+}
+
+.firm__name {
+    text-transform: capitalize;
+    color: $color-primary-light-1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: $color-primary-dark-1;
+    }
 }
