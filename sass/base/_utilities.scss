@@ -160,10 +160,120 @@
     vertical-align: middle;
 }
 
+.honey__dripping--top {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(black, 0.7), rgba(black, 0.5)), url(../../img/dripping_honey.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.honeycomb--gray {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url(../../img/honeycomb-pattern-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
 // .separator {
 //     margin: 0 auto .5rem;
 //     width: 100%;
 //     background-color: $color-primary-dark-1;
-//     height: .1rem;
-    
+//     height: .1rem;   
 // }
+
+@media screen and (max-width: $bp-large) {
+    .u-margin-bottom-big {
+        margin-bottom: 6rem;
+    }
+
+    .u-margin-bottom-medium {
+        margin-bottom: 3rem;
+    }
+
+    .u-margin-bottom-small {
+        margin-bottom: 1rem;
+    }
+
+    .u-margin-top-huge {
+        margin-top: 8rem;
+    }
+
+    .u-margin-top-big {
+        margin-top: 6rem;
+    }
+
+    .u-margin-top-medium {
+        margin-top: 4rem;
+    }
+
+    .u-margin-top-small {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .u-margin-bottom-big {
+        margin-bottom: 6rem;
+    }
+
+    .u-margin-bottom-medium {
+        margin-bottom: 2rem;
+    }
+
+    .u-margin-bottom-small {
+        margin-bottom: 1.5rem;
+    }
+
+    .u-margin-top-huge {
+        margin-top: 6rem;
+    }
+
+    .u-margin-top-big {
+        margin-top: 5rem;
+    }
+
+    .u-margin-top-medium {
+        margin-top: 3rem;
+    }
+
+    .u-margin-top-small {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
+    .u-margin-bottom-big {
+        margin-bottom: 5rem;
+    }
+
+    .u-margin-bottom-medium {
+        margin-bottom: 2.5rem;
+    }
+
+    .u-margin-bottom-small {
+        margin-bottom: 1rem;
+    }
+
+    .u-margin-top-huge {
+        margin-top: 5rem;
+    }
+
+    .u-margin-top-big {
+        margin-top: 4rem;
+    }
+
+    .u-margin-top-medium {
+        margin-top: 2.5rem;
+    }
+
+    .u-margin-top-small {
+        margin-top: 1rem;
+    }
+}
