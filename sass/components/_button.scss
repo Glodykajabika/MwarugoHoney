@@ -14,7 +14,7 @@
 
     &__header {
         position: absolute;
-        top: 80%;
+        top: 85%;
         left: 50%;
         font-size: 2rem;
         color: $color-white-dark-2;
@@ -142,6 +142,99 @@
                 color: $color-secondary-dark-3;
                 background-color: transparent;
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: $bp-large) {
+    .btn {
+        padding: 1.3rem 2rem;
+        font-size: 1.4rem;
+
+        &__header {
+            font-size: 1.8rem;
+            padding: 1.2rem 2rem;
+        }
+
+        &__more {
+            margin: 10rem auto 5rem;
+            font-size: 2rem;
+            padding: 1.2rem 6rem;
+        }
+
+        &__carousel {
+            font-size: 5rem;
+            border-radius: 50rem;
+            width: 10rem;
+            height: 10rem;
+        }
+
+        &__prev {
+            left: 1rem;
+        }
+
+        &__next {
+            right: 1rem;
+        }
+
+        &__form {
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .btn {
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+
+        &__header {
+            font-size: 1.3rem;
+            padding: .8rem 1.2rem;
+        }
+
+        &__more {
+            font-size: 1.4rem;
+            padding: 1rem 5rem;
+        }
+
+        &__carousel {
+            font-size: 1.7rem;
+            width: 5rem;
+            height: 5rem;
+        }
+
+        &__form {
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
+    .btn {
+        padding: .8rem 1.3rem;
+        font-size: 1.2rem;
+
+        &__header {
+            font-size: 1.3rem;
+            padding: .8rem 1.2rem;
+        }
+
+        &__more {
+            font-size: 1.3rem;
+            padding: .8rem 4rem;
+        }
+
+        &__carousel {
+            font-size: 1.5rem;
+        }
+
+        &__form {
+            margin-top: 3rem;
+            font-size: 1.6rem;
         }
     }
 }
