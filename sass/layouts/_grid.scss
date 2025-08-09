@@ -9,3 +9,28 @@
 }
 
 // if possible style differently the section blog's grid cards
+
+@media screen and (max-width: $bp-extra-large) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        max-width: 80rem;
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
+    .grid {
+        gap: 3rem;
+        max-width: 30rem;
+    }
+}
