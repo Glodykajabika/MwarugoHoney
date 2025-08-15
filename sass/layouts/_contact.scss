@@ -80,3 +80,75 @@
         transition: all .3s ease-in-out;
     }
 }
+
+@media screen and (max-width: $bp-large) {
+    .contact__card {
+        margin: 0 2rem;
+    }
+
+    .contact__info {
+        &--heading {
+            font-size: 1.8rem;
+            width: 30rem;
+        }
+
+        &--footer {
+
+            &-title {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .contact__card {
+        margin: 0 auto;
+        flex-direction: column;
+        height: 100%;
+        max-width: 50rem;
+        background-color: $color-bg-dark;
+    }
+
+    .contact__info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2.5rem;
+        border-top-left-radius: 2.7rem;
+        border-top-right-radius: 2.7rem;
+        border-bottom-left-radius: 0;
+        clip-path: polygon(
+            0% 0%, 
+            100% 0%, 
+            100% 100%, 
+            100% 100%, 
+            0% 100%, 
+            0% 0%
+        );
+
+        &--heading, 
+        &--footer {
+            width: 100%;
+        }
+
+        &--heading {
+            font-size: 1.6rem;
+        }
+
+        &--footer {
+
+            &-title {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
+    .contact__info--icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+}
