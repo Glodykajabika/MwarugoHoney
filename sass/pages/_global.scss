@@ -71,7 +71,6 @@
     }
 }
 
-// This is just to test if the changes are working properly
 
 @media screen and (max-width: $bp-large) {
     .logo {
@@ -138,37 +137,10 @@
 }
 
 @media screen and (max-width: $bp-tablet) {
-    .heading-primary {
-        font-size: 2.5rem;
-    }
-
-    .heading-secondary {
-        font-size: 2.5rem;
-    }
-
-    .heading-tertiary {
-        font-size: 1.5rem;
-    }
     
-    .heading-quaternary {
-        font-size: 1.4rem;
-    }
 }
 
 @media screen and (max-width: $bp-mobile) {
-    .heading-primary {
-        font-size: 2.3rem;
-    }
-
-    .heading-secondary {
-        font-size: 2.3rem;
-    }
-
-    .heading-tertiary {
-        font-size: 1.2rem;
-    }
     
-    .heading-quaternary {
-        font-size: 1.1rem;
-    }
 }
+
