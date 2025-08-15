@@ -77,6 +77,10 @@ body {
 }
 
 @media screen and (max-width: $bp-tablet) {
+    body {
+        font-size: 1.3rem;
+    }
+
     .heading-primary {
         font-size: 2.5rem;
     }
@@ -95,6 +99,10 @@ body {
 }
 
 @media screen and (max-width: $bp-mobile) {
+    body {
+        font-size: 1.2rem;
+    }
+
     .heading-primary {
         font-size: 2.3rem;
     }
@@ -108,6 +116,6 @@ body {
     }
     
     .heading-quaternary {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
