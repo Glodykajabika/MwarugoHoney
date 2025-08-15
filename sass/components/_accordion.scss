@@ -9,6 +9,7 @@
 
         
         &--header {
+            text-align: left;
             margin: 0 auto;
             padding-bottom: 1.5rem;
             cursor: pointer;
@@ -40,7 +41,6 @@
             height: 0;
             visibility: hidden;
             opacity: 0;
-            font-family: 1.8rem;
             font-size: 1.8rem;
             text-align: left;
             transition: all .3s ease-out;
@@ -50,6 +50,67 @@
                 height: fit-content;
                 visibility: visible;
                 opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-large) {
+    .accordion {
+        padding: 0 1.5rem;
+
+        &__item {
+            
+            &--header {
+                font-size: 2rem;
+
+                &-active {
+                    font-size: 1.8rem;
+                }
+            }
+
+            &--content {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .accordion {
+
+        &__item {
+            
+            &--header {
+                font-size: 1.8rem;
+
+                &-active {
+                    font-size: 1.6rem;
+                }
+            }
+
+            &--content {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
+    .accordion {
+
+        &__item {
+            
+            &--header {
+                font-size: 1.6rem;
+
+                &-active {
+                    font-size: 1.4rem;
+                }
+            }
+
+            &--content {
+                font-size: 1.2rem;
             }
         }
     }
