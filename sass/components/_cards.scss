@@ -42,7 +42,7 @@
         display: flex;
         flex-direction: column;
         // justify-content: space-between;
-        padding: 1.5rem 1.5rem;
+        padding: 1.5rem;
         flex: 1;
 
         &-text {
@@ -155,7 +155,8 @@
         }
 
         &:hover {
-            animation: shake 0.2s ease-in-out;
+            // animation: shake 0.2s ease-in-out;
+            transform: scale(.98);
         }
     }
 
@@ -190,94 +191,9 @@
 
 @media screen and (max-width: $bp-extra-large) {
     .card {
-        &__info {
-            padding: 1.5rem 1.5rem;
-            flex: 1;
-
-            &-text {
-                padding-top: 1.5rem;
-                padding-bottom: 1.5rem;
-
-                &--title {
-                    padding-bottom: 1.5rem;
-                    text-transform: capitalize;
-                    font-size: 1.7rem;
-                    font-weight: 600;
-                    color: $color-secondary-dark-3;
-
-                    &-blog {
-                        color: $color-tertiary-light-2;
-                    }
-                }
-
-                &--description {
-                    text-align: left;
-                    color: $color-white-light-1;
-
-                    &-blog {
-                        color: $color-grey-light-1;
-                    }
-                }
-            }
-        }
-        
         &__section-product {
             &--img-caption {
                 font-size: 2.5rem;
-            }
-
-            &--price {
-                font-size: 2rem;
-            }
-        }
-
-        &__section-blog {
-            &--time-container {
-                gap: 0.7rem;
-            }
-
-            &--time,
-            &--date {
-                font-size: 1.2rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: $bp-large) {
-    .card {
-        &__info {
-            padding: 1.5rem 1.5rem;
-
-            &-text {
-                padding-top: 1.5rem;
-                padding-bottom: 1.5rem;
-
-                &--title {
-                    padding-bottom: 1.5rem;
-                    font-size: 1.7rem;
-                }
-            }
-        }
-
-        &__section-product {
-            &--img-caption {
-                font-size: 3rem;
-            }
-
-            &--price {
-                font-size: 2rem;
-            }
-        }
-
-        &__section-blog {
-            &--time-container {
-                gap: 0.7rem;
-            }
-
-            &--time,
-            &--date {
-                font-size: 1.2rem;
             }
         }
     }
@@ -285,27 +201,17 @@
 
 @media screen and (max-width: $bp-tablet) {
     .card {
-        &__info {
-            padding: 1.5rem 1.5rem;
-
-            &-text {
-                padding-top: 1.5rem;
-                padding-bottom: 1.5rem;
-
-                &--title {
-                    padding-bottom: 1.5rem;
-                    font-size: 1.7rem;
-                }
-            }
+        &__img-container {
+            height: 20rem;
         }
 
-        &__section-product {
-            &--img-caption {
-                font-size: 3rem;
-            }
+        &__info {
 
-            &--price {
-                font-size: 2rem;
+            &-text {
+
+                &--title {
+                    font-size: 1.5rem;
+                }
             }
         }
 
@@ -316,7 +222,7 @@
 
             &--time,
             &--date {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     }
@@ -325,7 +231,6 @@
 @media screen and (max-width: $bp-mobile) {
     .card {
         &__info {
-            padding: 1.5rem;
             
             &-text {
                 padding-top: 1rem;
@@ -333,7 +238,7 @@
 
                 &--title {
                     padding-bottom: 1rem;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -351,7 +256,7 @@
         &__section-blog {
             &--time,
             &--date {
-                font-size: 1rem;
+                font-size: .9rem;
             }
         }
     }
