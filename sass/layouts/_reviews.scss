@@ -14,3 +14,12 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: $bp-large) {
+    .reviews-container {
+
+        .review__slide {
+            height: 100%;
+        }
+    }
+}
