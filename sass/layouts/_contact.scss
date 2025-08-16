@@ -83,10 +83,13 @@
 
 @media screen and (max-width: $bp-large) {
     .contact__card {
-        margin: 0 2rem;
+        margin: 0 2rem 15rem;
+        border: .4rem solid transparent;
     }
 
     .contact__info {
+        border: .4rem solid $color-primary;
+        border-bottom: .4rem solid transparent;
         &--heading {
             font-size: 1.8rem;
             width: 30rem;
@@ -103,7 +106,7 @@
 
 @media screen and (max-width: $bp-tablet) {
     .contact__card {
-        margin: 0 auto;
+        margin: 0 auto 15rem;
         flex-direction: column;
         height: 100%;
         max-width: 50rem;
@@ -146,6 +149,11 @@
 }
 
 @media screen and (max-width: $bp-mobile) {
+    .contact__card {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     .contact__info--icon {
         width: 1.8rem;
         height: 1.8rem;
