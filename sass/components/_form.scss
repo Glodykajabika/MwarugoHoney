@@ -2,6 +2,8 @@
 .contact__form {
     justify-self: right;
     width: 40%;
+    padding-right: 2rem;
+    padding-left: 1rem;
     border-radius: 2rem;
     align-content: center;
     justify-items: center;
@@ -73,9 +75,9 @@
     height: 10rem;
 }
 
-@media screen and (max-width: $bp-large) {
+@media screen and (max-width: $bp-tablet) {
     .contact__form {
-        width: 100%;
+        width: 100%; //? Try inputing 100.5% as the width here if the form still can't fit the whole contact form's width on tablet screens
         padding: 6rem 0 2rem;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
@@ -90,66 +92,12 @@
         );
     }
 
-    .form__group {
-        // width: 1rem;
-
-        &:not(:last-child) {
-            margin-bottom: 1rem;
-        }
-        
-
-        &--input {
-            height: 5.5rem;
-
-            &:focus:invalid {
-                border-color: red;
-            }
-        }
-
-        &--label {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-left: 1.5rem;
-            display: block;
-            transform: translateY(-8rem);
-            transition: all 0.3s ease-in-out;
-        }
-
-        &--input:placeholder-shown + &--label {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-5rem);
-        }
-    }
-
     .form__group--input,
     .form__text-area {
-        display: block;
-        width: 40rem;
-        max-width: 30rem;
-        padding: .5rem 1.5rem;
-        font-size: 2rem;
-        color: $color-white-dark-2;
-        font-weight: 500;
-        border: .2rem solid $color-primary-light-1;
-        border-radius: 1rem;
-        background-color: transparent;
-        transition: all 0.3s;
-
-        &:focus { 
-            outline: none;
-            border: 0.3rem solid $color-primary-light-1;
-        }
-
-        &:focus:valid {
-            border-color: $color-tertiary-light-2;
-        }
+        font-size: 1.3rem; 
 
         &::placeholder {
-            color: rgba($color-white-dark-1, .5);
-            font-size: 1.7rem;
-            text-transform: capitalize;
-            font-weight: 500;
+            font-size: 1.3rem;
         }
     }
 
@@ -158,10 +106,37 @@
     }
 }
 
-@media screen and (max-width: $bp-tablet) {
-    
-}
 
 @media screen and (max-width: $bp-mobile) {
-    
+    .form__group {
+
+        &--input {
+            height: 5rem;
+        }
+
+        &--label {
+            font-size: 1.2rem;
+        }
+    }
+
+    .form__group--input,
+    .form__text-area {
+        font-size: 1.2rem; 
+
+        &::placeholder {
+            font-size: 1.2rem;
+        }
+    }
+
+    .form__text-area {
+        height: 8rem;
+    }
+
+    .footer__form {
+
+        .form__group--input {
+            width: 100%;
+
+        }
+    }
 }
