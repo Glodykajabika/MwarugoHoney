@@ -34,13 +34,14 @@
         border-top-left-radius: 1.5rem;
         border-bottom-left-radius: 1.5rem;
     }
-
+    
     &__img-container {
         border: .3rem solid rgba($color-primary, 1);
         background-color: $color-primary;
     }
-
+    
     &__img {
+        width: 39.5rem;
         object-fit: cover;
         object-position: top center;
         clip-path: polygon(
@@ -51,7 +52,6 @@
             0% 50%,
             0% 0%
         );
-        
     }
 
     &__header {
@@ -103,12 +103,17 @@
 
         &__img-container,
         &__img {
-            width: 40rem;
             border-bottom-left-radius: 0;
+            height: 25rem;
         }
 
         &__img-container {
+            width: 40rem;
             border-top-right-radius: 1.5rem;
+        }
+        
+        &__img {
+            width: 100%;
         }
 
         &__header {
@@ -145,6 +150,11 @@
             gap: 1.5rem;
         }
 
+        &__img-container,
+        &__img {
+            height: 23rem;
+        }
+
         &__info {
             
             &--name {
@@ -160,6 +170,23 @@
 
 @media screen and (max-width: $bp-mobile) {
     .carousel {
+
+        &__slide {
+            min-width: 35rem;
+        }
+
+        &__img-container,
+        &__img {
+            height: 20rem;
+        }
+
+        &__img-container {
+            width: 35rem;
+        }
+
+        &__img {
+            width: 100%;
+        }
 
         &__wrapper {
             gap: 3rem;
@@ -177,6 +204,12 @@
             &--title {
                 font-size: 1.3rem;
                 padding-bottom: .9rem;
+            }
+
+            &--comment {
+                margin: 0 auto;
+                width: 30rem;
+                text-align: center;
             }
         }
     }
