@@ -1,15 +1,34 @@
+
+.logo-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover::before {
+        box-shadow: 0 0 5rem 3rem rgba($color-primary-dark-1, 0.9); 
+    }
+}
+
 .logo {
+    position: relative;
+    top: 0;
+    left: 0;
     border-radius: 50%;
     height: 10rem;
     cursor: pointer;
-
-    &:hover {
-        background-image: radial-gradient(
-            circle,
-            rgba($color-primary-dark-1, 0.8) 10%,
-            rgba($color-primary, 0) 60%
-        );
-    }
 }
 
 .content {
@@ -34,7 +53,7 @@
 
         &:hover {
             cursor: pointer;
-            font-size: 4.7rem;
+            transform: scale(1.09);
             color: $color-primary-light-1;
         }
     }
@@ -74,73 +93,62 @@
 
 @media screen and (max-width: $bp-large) {
     .logo {
-        height: 10rem;
-    }
-
-    .content {
-        max-width: 130rem;
+        height: 6rem;
     }
 
     .mini-header {
-        display: flex;
-        padding: 2rem 5rem 0;
-        align-items: center;
-        justify-content: space-between;
 
         .header__heading {
-            position: relative;
-            top: 0;
-            left: 0;
-            transform: translate(0, 0);
-            font-size: 4.5rem;
-            transition: all 0.3s ease-in-out;
-            letter-spacing: 1rem;
-
-            &:hover {
-                cursor: pointer;
-                font-size: 4.7rem;
-                color: $color-primary-light-1;
-            }
+            font-size: 3.5rem;
         }
 
         .cart__product {
-            width: 3.5rem;
-            height: 3.5rem;
-        }
-    }
-
-    .section-intro {
-        margin: 10rem auto 15rem;
-        max-width: 90rem;
-    }
-
-    .email:hover {
-        transition: all 0.3s ease-in-out;
-        color: $color-secondary-dark-3;
-    }
-
-    .legal__update-time {
-        margin-bottom: 4rem;
-        text-align: right;
-    }
-
-    .firm__name {
-        text-transform: capitalize;
-        color: $color-primary-light-1;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-
-        &:hover {
-            color: $color-primary-dark-1;
+            width: 3rem;
+            height: 3rem;
         }
     }
 }
 
 @media screen and (max-width: $bp-tablet) {
-    
+    .logo {
+        height: 5.5rem;
+    }
+
+    .mini-header {
+
+        .header__heading {
+            font-size: 2.5rem;
+        }
+
+        .cart__product {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    .legal__update-time {
+        margin-bottom: 3rem;
+    }
 }
 
 @media screen and (max-width: $bp-mobile) {
-    
-}
+    .logo {
+        height: 4.5rem;
+    }
 
+    .mini-header {
+
+        .header__heading {
+            font-size: 2rem;
+        }
+
+        .cart__product {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    .legal__update-time {
+        margin-bottom: 2rem;
+    }
+}
