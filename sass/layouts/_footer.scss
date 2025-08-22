@@ -108,6 +108,7 @@
     }
 
     .footer__contact-container {
+        width: 100%;
         max-width: 50rem;
     }
 
@@ -115,6 +116,7 @@
         display: flex;
         gap: 2rem;
         margin: 2rem 0;
+        width: 100%;
     }    
 
     .email:hover {
@@ -185,14 +187,18 @@
         }
 
         .footer__contact-container {
-            width: 25rem;
+            text-align: left;
+
+            .footer__contact {
+                margin-top: 3rem;
+            }
         }
+    
 
         .footer__form {
             display: inline-block;
 
-            &--input {
-                width: 100%;
+            .form__group--input {
                 font-size: 1.4rem;
 
                 &::placeholder {
@@ -257,15 +263,6 @@
                 }
             }
         }
-
-        .footer__contact-container {
-            width: 100%;
-            text-align: left;
-
-            .footer__contact {
-                margin-top: 3rem;
-            }
-        }
     }
 }
 
@@ -317,13 +314,8 @@
             }
         }
 
-        .footer__contact-container {
-            width: 100%;
-            text-align: left;
-
-            .footer__contact {
-                margin-top: 3rem;
-            }
+        .footer__credentials {
+            font-size: .9rem;
         }
     }
 }
