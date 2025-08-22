@@ -1,7 +1,7 @@
 .blog__article {
     max-width: 90rem;
     margin: 10rem auto 25rem;
-    text-align: justify;
+    // text-align: justify;
     font-family: $font-secondary;
     font-size: 2rem;
     color: $color-grey-light-3;
@@ -79,6 +79,11 @@
     object-fit: cover;
 }
 
+.blog-content {
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
 .blog__points--main {
     margin: 6rem auto 2.5rem;
     text-align: center;
@@ -97,5 +102,107 @@
 
     & li:not(:first-child) {
         margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: $bp-large) {
+    .article__description {
+        font-size: 2rem;
+    }
+
+    .article__heading {
+        font-size: 3rem;
+    }
+    
+    .article__date-time-container {
+        
+        .card__section-blog--time,
+        .card__section-blog--date {
+            font-size: 1.2rem;
+        }
+    }
+    
+    
+    .article__img-container {
+        margin: 2rem 2rem 9rem;
+        height: 55rem;
+    }
+    
+    .blog__article {
+        font-size: 1.4rem;
+    }
+
+    .blog-content {
+        max-width: 80%;
+        font-size: 1.6rem;
+    }
+
+    .blog__instructions {
+        padding: 2rem 0 4rem 8rem;
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .blog__article {
+        font-size: 1.3rem;
+        margin: 5rem auto 15rem;
+    }
+
+    .article__description {
+        font-size: 1.8rem;
+    }
+
+    .article__heading {
+        font-size: 2.5rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .article__img-container {
+        margin: 1.5rem 2rem 7rem;
+        height: 45rem;
+    }
+
+    .article__date-time-container {
+
+        .card__section-blog--time,
+        .card__section-blog--date {
+            font-size: 1rem;
+        }
+    }
+
+    .blog__instructions {
+        padding-left: 5rem;
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
+    .blog__article {
+        font-size: 1.2rem;
+    }
+
+    .blog__points--main {
+        font-size: 1.8rem;
+    }
+
+    .article__heading {
+        font-size: 2.3rem;
+    }
+
+    .article__description {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .article__date-time-container {
+
+        .card__section-blog--time,
+        .card__section-blog--date {
+            font-size: .9rem;
+        }
+    }
+
+    .article__img-container {
+        height: 30rem;
     }
 }
