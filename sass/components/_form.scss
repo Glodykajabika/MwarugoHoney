@@ -75,6 +75,14 @@
     height: 10rem;
 }
 
+.footer__form {
+
+    .form__group--input {
+        width: 100%;
+
+    }
+}
+
 @media screen and (max-width: $bp-tablet) {
     .contact__form {
         width: 100%; //? Try inputing 100.5% as the width here if the form still can't fit the whole contact form's width on tablet screens
@@ -91,6 +99,8 @@
             0% 0%
         );
     }
+
+    
 
     .form__group--input,
     .form__text-area {
@@ -130,13 +140,5 @@
 
     .form__text-area {
         height: 8rem;
-    }
-
-    .footer__form {
-
-        .form__group--input {
-            width: 100%;
-
-        }
     }
 }
