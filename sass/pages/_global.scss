@@ -50,17 +50,18 @@
         font-size: 4.5rem;
         transition: all 0.3s ease-in-out;
         letter-spacing: 1rem;
-
+        
         &:hover {
             cursor: pointer;
             transform: scale(1.09);
             color: $color-primary-light-1;
         }
     }
-
+    
     .cart__product {
         width: 3.5rem;
         height: 3.5rem;
+        align-self: center;
     }
 }
 
@@ -126,6 +127,10 @@
         }
     }
 
+    .section-intro {
+        margin: 5rem auto 8rem;
+    }
+
     .legal__update-time {
         margin-bottom: 3rem;
     }
@@ -137,6 +142,7 @@
     }
 
     .mini-header {
+        padding: 2rem .5rem 0;
 
         .header__heading {
             font-size: 2rem;
