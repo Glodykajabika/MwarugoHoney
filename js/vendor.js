@@ -1,5 +1,4 @@
 
-
 // Sticky nav 
 const navbar = document.querySelector('.nav');
 const header__navbar = document.getElementById('header__navbar');
