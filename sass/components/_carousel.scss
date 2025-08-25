@@ -108,6 +108,7 @@
         }
 
         &__img-container {
+            height: 25.5rem;
             width: 40rem;
             border-top-right-radius: 1.5rem;
         }
@@ -155,6 +156,10 @@
             height: 23rem;
         }
 
+        &__img-container {
+            height: 23.5rem;
+        }
+
         &__info {
             
             &--name {
@@ -179,8 +184,9 @@
         &__img {
             height: 20rem;
         }
-
+        
         &__img-container {
+            height: 20.5rem;
             width: 35rem;
         }
 
