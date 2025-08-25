@@ -108,6 +108,11 @@
             height: 3rem;
         }
     }
+
+    .legal__update-time {
+        margin-right: 3rem;
+        text-align: right;
+    }
 }
 
 @media screen and (max-width: $bp-tablet) {
