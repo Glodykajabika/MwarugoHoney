@@ -727,6 +727,7 @@ body {
     border-bottom-left-radius: 0;
     height: 25rem; }
   .carousel__img-container {
+    height: 25.5rem;
     width: 40rem;
     border-top-right-radius: 1.5rem; }
   .carousel__img {
@@ -752,6 +753,8 @@ body {
     gap: 1.5rem; }
   .carousel__img-container, .carousel__img {
     height: 23rem; }
+  .carousel__img-container {
+    height: 23.5rem; }
   .carousel__info--name {
     padding-bottom: 1.3rem; }
   .carousel__info--title {
@@ -763,6 +766,7 @@ body {
   .carousel__img-container, .carousel__img {
     height: 20rem; }
   .carousel__img-container {
+    height: 20.5rem;
     width: 35rem; }
   .carousel__img {
     width: 100%; }
@@ -1615,7 +1619,10 @@ body {
     font-size: 3.5rem; }
   .mini-header .cart__product {
     width: 3rem;
-    height: 3rem; } }
+    height: 3rem; }
+  .legal__update-time {
+    margin-right: 3rem;
+    text-align: right; } }
 
 @media screen and (max-width: 800px) {
   .logo {
