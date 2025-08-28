@@ -523,6 +523,7 @@ body {
       font-size: 1.5rem; }
     .btn__form {
       margin-top: 3rem;
+      margin-left: 3rem;
       font-size: 1.2rem; } }
 
 .card {
@@ -875,13 +876,14 @@ body {
     height: 10rem; } }
 
 @media screen and (max-width: 500px) {
-  .form__group {
+  .form__group,
+  .form__text-area {
     max-width: 30rem;
     margin: 0 auto; }
-    .form__group--input {
-      height: 5rem; }
-    .form__group--label {
-      font-size: 1.2rem; }
+  .form__group--input {
+    height: 5rem; }
+  .form__group--label {
+    font-size: 1.2rem; }
   .form__group--input,
   .form__text-area {
     font-size: 1.2rem; }

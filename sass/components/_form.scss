@@ -118,9 +118,13 @@
 
 
 @media screen and (max-width: $bp-mobile) {
-    .form__group {
+    .form__group,
+    .form__text-area {
         max-width: 30rem;
         margin: 0 auto;
+    }
+
+    .form__group {
 
         &--input {
             height: 5rem;
