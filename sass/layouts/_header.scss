@@ -93,16 +93,17 @@
 @media screen and (max-width: $bp-large) {
     .header {
         &__links-box {
+            display: none;
             position: absolute;
             top: -80rem;
             left: 100rem;
-            display: block;
             width: 100vw;
             height: 100vh;
             opacity: 0;
             transition: all .3s ease-in;
             
             &.active {
+                display: block;
                 top: 0;
                 left: 0;
                 background-color: $color-bg-dark;
