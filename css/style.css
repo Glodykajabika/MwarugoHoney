@@ -876,7 +876,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .form__group {
-    max-width: 35rem;
+    max-width: 30rem;
     margin: 0 auto; }
     .form__group--input {
       height: 5rem; }
