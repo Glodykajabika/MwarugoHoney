@@ -10,7 +10,6 @@
 }
 
 .form__group {
-    margin: 0 auto;
 
     &:not(:last-child) {
         margin-bottom: 1rem;
@@ -120,6 +119,8 @@
 
 @media screen and (max-width: $bp-mobile) {
     .form__group {
+        max-width: 35rem;
+        margin: 0 auto;
 
         &--input {
             height: 5rem;
