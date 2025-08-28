@@ -1575,14 +1575,14 @@ body {
     height: fit-content;
     width: fit-content;
     padding: 0;
-    padding-right: 2rem;
+    padding-right: 1.2rem;
     transition: all .2s ease-in;
     transform: translate(-50%, -50%); }
     .header__link:not(:last-child) {
       margin-bottom: 2rem; }
-    .header__link:hover {
+    .header__link:hover, .header__link:active {
       border-left: 0.5rem solid #9f7020;
-      padding-left: 2rem;
+      padding-left: 1.2rem;
       padding-right: 0;
       transform: translate(-50%, -50%) scale(0.95); }
   .header__heading {
